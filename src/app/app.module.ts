@@ -12,6 +12,9 @@ import { RecreationComponent } from './components/recreation/recreation.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { CompetitionLeagueComponent } from './components/leagues/competition-league/competition-league.component';
 import { UysaStateCompetitionComponent } from './components/leagues/uysa-state-competition/uysa-state-competition.component';
+import { ResourcesSideBarComponent } from './components/sideBars/resources-side-bar/resources-side-bar.component';
+import { EventsSideBarComponent } from './components/sideBars/events-side-bar/events-side-bar.component';
+import { RegistrationComponent } from './components/recreation/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { UysaStateCompetitionComponent } from './components/leagues/uysa-state-c
     RecreationComponent,
     ContactComponent,
     CompetitionLeagueComponent,
-    UysaStateCompetitionComponent
+    UysaStateCompetitionComponent,
+    ResourcesSideBarComponent,
+    EventsSideBarComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

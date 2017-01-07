@@ -10,6 +10,7 @@ import { CompetitionLeagueComponent } from './components/leagues/competition-lea
 import { UysaStateCompetitionComponent } from './components/leagues/uysa-state-competition/uysa-state-competition.component';
 import { RecreationComponent } from './components/recreation/recreation.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { RegistrationComponent } from './components/recreation/registration/registration.component'
 
 export const router: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,6 +22,7 @@ export const router: Routes = [
     { path: 'uysaStateCompetition', component: UysaStateCompetitionComponent },
     { path: 'recreation', component: RecreationComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'registration', component: RegistrationComponent },
 ]
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);
