@@ -20,6 +20,14 @@ import { UpcomingEventsComponent } from './components/events/upcoming-events/upc
 import { CacheValleyMiniCupComponent } from './components/events/cache-valley-mini-cup/cache-valley-mini-cup.component';
 import { SoccerExpoComponent } from './components/events/soccer-expo/soccer-expo.component';
 import { AnnualGeneralMeetingComponent } from './components/events/annual-general-meeting/annual-general-meeting.component';
+import { DownloadsComponent } from './components/resources/downloads/downloads.component';
+import { CoachesComponent } from './components/resources/coaches/coaches.component';
+import { PlayersComponent } from './components/resources/players/players.component';
+import { ParentsComponent } from './components/resources/parents/parents.component';
+import { GearComponent } from './components/resources/gear/gear.component';
+import { FundraisingComponent } from './components/resources/fundraising/fundraising.component';
+import { ArticlesComponent } from './components/resources/articles/articles.component';
+import { RefereesComponent } from './components/resources/referees/referees.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +47,15 @@ import { AnnualGeneralMeetingComponent } from './components/events/annual-genera
     UpcomingEventsComponent,
     CacheValleyMiniCupComponent,
     SoccerExpoComponent,
-    AnnualGeneralMeetingComponent
+    AnnualGeneralMeetingComponent,
+    DownloadsComponent,
+    CoachesComponent,
+    PlayersComponent,
+    ParentsComponent,
+    GearComponent,
+    FundraisingComponent,
+    ArticlesComponent,
+    RefereesComponent
   ],
   imports: [
     BrowserModule,

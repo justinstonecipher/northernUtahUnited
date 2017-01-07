@@ -1,28 +1,31 @@
 <div class="col-lg-3">
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Downloads</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Coaches</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Players</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Parents</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Soccer Gear</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Fundraising</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">News and Articles</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Referees</a>
-      </li>
-    </ul>
-  </div>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="downloads">Downloads</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="coaches">Coaches</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="players">Players</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" routerLink="parents">Parents</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="gear">Soccer Gear</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="fundraising">Fundraising</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" routerLink="articles">News and Articles</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" routerLink="referees">Referees</a>
+    </li>
+  </ul>
+</div>
+<div class="col-lg-9">
+  <router-outlet></router-outlet>
+</div>
