@@ -1,19 +1,22 @@
 <div class="col-lg-3">
   <ul class="nav flex-column">
     <li class="nav-item">
-      <a class="nav-link active" href="#">Upcoming Events</a>
+      <a class="nav-link active" routerLink="upcomingEvents">Upcoming Events</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Cache Valley Cup</a>
+      <a class="nav-link" routerLink="cacheValleyCup">Cache Valley Cup</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Cache Valley Mini Cup</a>
+      <a class="nav-link" routerLink="cacheValleyMiniCup">Cache Valley Mini Cup</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" href="#">CVC Soccer EXPO</a>
+      <a class="nav-link disabled" routerLink="CvcSoccerExpo">CVC Soccer EXPO</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">NUU Annual General Meeting</a>
+      <a class="nav-link" routerLink="annualGeneralMeeting">NUU Annual General Meeting</a>
     </li>
   </ul>
+</div>
+<div class="col-lg-9">
+  <router-outlet></router-outlet>
 </div>

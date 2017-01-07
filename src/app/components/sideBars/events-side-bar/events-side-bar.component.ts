@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EventsComponent } from '../../events/events.component';
+import { CacheValleyCupComponent } from '../../events/cache-valley-cup/cache-valley-cup.component'
 
 @Component({
   selector: 'app-events-side-bar',

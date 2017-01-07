@@ -15,6 +15,11 @@ import { UysaStateCompetitionComponent } from './components/leagues/uysa-state-c
 import { ResourcesSideBarComponent } from './components/sideBars/resources-side-bar/resources-side-bar.component';
 import { EventsSideBarComponent } from './components/sideBars/events-side-bar/events-side-bar.component';
 import { RegistrationComponent } from './components/recreation/registration/registration.component';
+import { CacheValleyCupComponent } from './components/events/cache-valley-cup/cache-valley-cup.component';
+import { UpcomingEventsComponent } from './components/events/upcoming-events/upcoming-events.component';
+import { CacheValleyMiniCupComponent } from './components/events/cache-valley-mini-cup/cache-valley-mini-cup.component';
+import { SoccerExpoComponent } from './components/events/soccer-expo/soccer-expo.component';
+import { AnnualGeneralMeetingComponent } from './components/events/annual-general-meeting/annual-general-meeting.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { RegistrationComponent } from './components/recreation/registration/regi
     UysaStateCompetitionComponent,
     ResourcesSideBarComponent,
     EventsSideBarComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    CacheValleyCupComponent,
+    UpcomingEventsComponent,
+    CacheValleyMiniCupComponent,
+    SoccerExpoComponent,
+    AnnualGeneralMeetingComponent
   ],
   imports: [
     BrowserModule,
