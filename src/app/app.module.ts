@@ -28,6 +28,19 @@ import { GearComponent } from './components/resources/gear/gear.component';
 import { FundraisingComponent } from './components/resources/fundraising/fundraising.component';
 import { ArticlesComponent } from './components/resources/articles/articles.component';
 import { RefereesComponent } from './components/resources/referees/referees.component';
+import { CompetitionSideBarComponent } from './components/sideBars/competition-side-bar/competition-side-bar.component';
+import { SchedulesComponent } from './components/leagues/competition-league/schedules/schedules.component';
+import { RegistrationInfoComponent } from './components/leagues/competition-league/registration-info/registration-info.component';
+import { LeagueResultsComponent } from './components/leagues/competition-league/league-results/league-results.component';
+import { TryoutInfoComponent } from './components/leagues/competition-league/tryout-info/tryout-info.component';
+import { TryoutAdFormComponent } from './components/leagues/competition-league/tryout-ad-form/tryout-ad-form.component';
+import { UysaSideBarComponent } from './components/sideBars/uysa-side-bar/uysa-side-bar.component';
+import { UysaScheduleComponent } from './components/leagues/uysa-state-competition/uysa-schedule/uysa-schedule.component';
+import { UysaRegistrationInfoComponent } from './components/leagues/uysa-state-competition/uysa-registration-info/uysa-registration-info.component';
+import { UysaLeagueResultsComponent } from './components/leagues/uysa-state-competition/uysa-league-results/uysa-league-results.component';
+import { UysaTryoutInfoComponent } from './components/leagues/uysa-state-competition/uysa-tryout-info/uysa-tryout-info.component';
+import { UysaTryoutAdFormComponent } from './components/leagues/uysa-state-competition/uysa-tryout-ad-form/uysa-tryout-ad-form.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +68,20 @@ import { RefereesComponent } from './components/resources/referees/referees.comp
     GearComponent,
     FundraisingComponent,
     ArticlesComponent,
-    RefereesComponent
+    RefereesComponent,
+    CompetitionSideBarComponent,
+    SchedulesComponent,
+    RegistrationInfoComponent,
+    LeagueResultsComponent,
+    TryoutInfoComponent,
+    TryoutAdFormComponent,
+    UysaSideBarComponent,
+    UysaScheduleComponent,
+    UysaRegistrationInfoComponent,
+    UysaLeagueResultsComponent,
+    UysaTryoutInfoComponent,
+    UysaTryoutAdFormComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

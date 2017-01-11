@@ -60,10 +60,9 @@
           <a class="nav-link" routerLink="events/upcomingEvents">Events</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Leagues</a>
+          <a class="nav-link dropdown-toggle" href="#" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leagues</a>
           <div class="dropdown-menu" aria-labelledby="supportedContentDropdown">
-            <a class="dropdown-item" routerLink="competitionLeague">Competition League</a>
+            <a class="dropdown-item" routerLink="competitionLeague/challengerSchedule">Competition League</a>
             <a class="dropdown-item" routerLink="uysaStateCompetition">UYSA State Competition</a>
           </div>
         </li>
@@ -78,14 +77,20 @@
   </div>
 </div>
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
 
 <footer>
   <div class="container">
-    <div class="col-lg-12">
-      <p>Footer Stuff</p>
+    <div class="row">
+      <p class="col-sm-3"> &copy; Northern Utah United</p>
+      <p class="col-sm-1"><a routerLink="faq">FAQ</a></p>
+      <p class="col-sm-1"><a routerLink="legal">Legal</a></p>
+      <p class="col-sm-3"><a href="http://uysa.affinitysoccer.com/reg/index.asp?sessionguid=">Affinity Sports</a></p>
+      <ul class="col-sm-8">
+        <li class="col-sm-1"><a href="http://facebook.com/NorthernUtahUnited" class="no-link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li class="col-sm-1"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        <li class="col-sm-1"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+      </ul>
     </div>
   </div>
 </footer>
