@@ -41,6 +41,12 @@ import { UysaLeagueResultsComponent } from './components/leagues/uysa-state-comp
 import { UysaTryoutInfoComponent } from './components/leagues/uysa-state-competition/uysa-tryout-info/uysa-tryout-info.component';
 import { UysaTryoutAdFormComponent } from './components/leagues/uysa-state-competition/uysa-tryout-ad-form/uysa-tryout-ad-form.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { CupRegistrationComponent } from './components/events/cache-valley-cup/cup-registration/cup-registration.component';
+import { CupSchedulesComponent } from './components/events/cache-valley-cup/cup-schedules/cup-schedules.component';
+import { CupLocationComponent } from './components/events/cache-valley-cup/cup-location/cup-location.component';
+import { CupCarnivalComponent } from './components/events/cache-valley-cup/cup-carnival/cup-carnival.component';
+import { CupRulesComponent } from './components/events/cache-valley-cup/cup-rules/cup-rules.component';
+import { CupDirectionsComponent } from './components/events/cache-valley-cup/cup-directions/cup-directions.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +87,13 @@ import { FaqComponent } from './components/faq/faq.component';
     UysaLeagueResultsComponent,
     UysaTryoutInfoComponent,
     UysaTryoutAdFormComponent,
-    FaqComponent
+    FaqComponent,
+    CupRegistrationComponent,
+    CupSchedulesComponent,
+    CupLocationComponent,
+    CupCarnivalComponent,
+    CupRulesComponent,
+    CupDirectionsComponent
   ],
   imports: [
     BrowserModule,

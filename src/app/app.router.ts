@@ -35,6 +35,13 @@ import { UysaLeagueResultsComponent } from './components/leagues/uysa-state-comp
 import { UysaTryoutInfoComponent } from './components/leagues/uysa-state-competition/uysa-tryout-info/uysa-tryout-info.component';
 import { UysaTryoutAdFormComponent } from './components/leagues/uysa-state-competition/uysa-tryout-ad-form/uysa-tryout-ad-form.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { CupRegistrationComponent } from './components/events/cache-valley-cup/cup-registration/cup-registration.component';
+import { CupSchedulesComponent } from './components/events/cache-valley-cup/cup-schedules/cup-schedules.component';
+import { CupLocationComponent } from './components/events/cache-valley-cup/cup-location/cup-location.component';
+import { CupCarnivalComponent } from './components/events/cache-valley-cup/cup-carnival/cup-carnival.component';
+import { CupRulesComponent } from './components/events/cache-valley-cup/cup-rules/cup-rules.component';
+import { CupDirectionsComponent } from './components/events/cache-valley-cup/cup-directions/cup-directions.component';
+
 
 export const router: Routes = [
     { 
@@ -104,7 +111,38 @@ export const router: Routes = [
         },
         {
           path: 'cacheValleyCup',
-          component: CacheValleyCupComponent
+          component: CacheValleyCupComponent,
+          children: [
+            {
+              path: '',
+              redirectTo: 'cacheValleyCup',
+              pathMatch: 'full'
+            },
+            {
+              path: 'cupRegistration',
+              component: CupRegistrationComponent
+            },
+            {
+              path: 'cupSchedules',
+              component: CupSchedulesComponent
+            },
+            {
+              path: 'cupLocation',
+              component: CupLocationComponent
+            },
+            {
+              path: 'cupCarnival',
+              component: CupCarnivalComponent
+            },
+            {
+              path: 'cupRules',
+              component: CupRulesComponent
+            },
+            {
+              path: 'cupDirections',
+              component: CupDirectionsComponent
+            }
+          ]
         },
         {
           path: 'upcomingEvents',
