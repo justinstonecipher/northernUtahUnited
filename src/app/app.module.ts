@@ -47,6 +47,30 @@ import { CupLocationComponent } from './components/events/cache-valley-cup/cup-l
 import { CupCarnivalComponent } from './components/events/cache-valley-cup/cup-carnival/cup-carnival.component';
 import { CupRulesComponent } from './components/events/cache-valley-cup/cup-rules/cup-rules.component';
 import { CupDirectionsComponent } from './components/events/cache-valley-cup/cup-directions/cup-directions.component';
+import { KentonComponent } from './components/resources/articles/kenton/kenton.component';
+import { PersonalFoulParentsComponent } from './components/resources/articles/personal-foul-parents/personal-foul-parents.component';
+import { UsuSoccerComponent } from './components/resources/articles/usu-soccer/usu-soccer.component';
+import { BairLeadLaRoccaComponent } from './components/resources/articles/bair-lead-la-rocca/bair-lead-la-rocca.component';
+import { CvcGrowsComponent } from './components/resources/articles/cvc-grows/cvc-grows.component';
+import { LocalTeamsComponent } from './components/resources/articles/local-teams/local-teams.component';
+import { HandballComponent } from './components/resources/articles/handball/handball.component';
+import { TotalFootballComponent } from './components/resources/articles/total-football/total-football.component';
+import { TeachPrinciplesComponent } from './components/resources/articles/teach-principles/teach-principles.component';
+import { NewLogoComponent } from './components/resources/articles/new-logo/new-logo.component';
+import { SadNewsComponent } from './components/resources/articles/sad-news/sad-news.component';
+import { MonthlyNewsletterComponent } from './components/resources/articles/monthly-newsletter/monthly-newsletter.component';
+import { PresidentsCupComponent } from './components/resources/articles/presidents-cup/presidents-cup.component';
+import { RslLoganFacilityComponent } from './components/resources/articles/rsl-logan-facility/rsl-logan-facility.component';
+import { RefBigTimeComponent } from './components/resources/articles/ref-big-time/ref-big-time.component';
+import { SvSophmoreComponent } from './components/resources/articles/sv-sophmore/sv-sophmore.component';
+import { BannerSeasonComponent } from './components/resources/articles/banner-season/banner-season.component';
+import { GirlsTeamComponent } from './components/resources/articles/girls-team/girls-team.component';
+import { UysaChangesComponent } from './components/resources/articles/uysa-changes/uysa-changes.component';
+import { UysaChampionshipComponent } from './components/resources/articles/uysa-championship/uysa-championship.component';
+import { CoachingLicensesComponent } from './components/resources/articles/coaching-licenses/coaching-licenses.component';
+import { StateCompTryoutsComponent } from './components/resources/articles/state-comp-tryouts/state-comp-tryouts.component';
+import { InterviewComponent } from './components/resources/articles/interview/interview.component';
+import { RslSoundersComponent } from './components/resources/articles/rsl-sounders/rsl-sounders.component';
 
 @NgModule({
   declarations: [
@@ -93,7 +117,31 @@ import { CupDirectionsComponent } from './components/events/cache-valley-cup/cup
     CupLocationComponent,
     CupCarnivalComponent,
     CupRulesComponent,
-    CupDirectionsComponent
+    CupDirectionsComponent,
+    KentonComponent,
+    PersonalFoulParentsComponent,
+    UsuSoccerComponent,
+    BairLeadLaRoccaComponent,
+    CvcGrowsComponent,
+    LocalTeamsComponent,
+    HandballComponent,
+    TotalFootballComponent,
+    TeachPrinciplesComponent,
+    NewLogoComponent,
+    SadNewsComponent,
+    MonthlyNewsletterComponent,
+    PresidentsCupComponent,
+    RslLoganFacilityComponent,
+    RefBigTimeComponent,
+    SvSophmoreComponent,
+    BannerSeasonComponent,
+    GirlsTeamComponent,
+    UysaChangesComponent,
+    UysaChampionshipComponent,
+    CoachingLicensesComponent,
+    StateCompTryoutsComponent,
+    InterviewComponent,
+    RslSoundersComponent
   ],
   imports: [
     BrowserModule,
