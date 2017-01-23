@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {enableProdMode} from '@angular/core';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routes } from './app.router';
@@ -70,6 +73,8 @@ import { StateCompTryoutsComponent } from './components/resources/state-comp-try
 import { InterviewComponent } from './components/resources/interview/interview.component';
 import { RslSoundersComponent } from './components/resources/rsl-sounders/rsl-sounders.component';
 import { ChoosingLeaguesComponent } from './components/resources/choosing-leagues/choosing-leagues.component';
+
+enableProdMode();
 
 @NgModule({
   declarations: [
@@ -147,7 +152,7 @@ import { ChoosingLeaguesComponent } from './components/resources/choosing-league
     HttpModule,
     routes
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

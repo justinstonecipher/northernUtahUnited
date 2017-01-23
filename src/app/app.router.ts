@@ -85,11 +85,6 @@ export const router: Routes = [
     component: ResourcesComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'resources',
-        pathMatch: 'full'
-      },
-      {
         path: 'downloads',
         component: DownloadsComponent
       },
@@ -220,19 +215,9 @@ export const router: Routes = [
     component: EventsComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'events',
-        pathMatch: 'full'
-      },
-      {
         path: 'cacheValleyCup',
         component: CacheValleyCupComponent,
         children: [
-          {
-            path: '',
-            redirectTo: 'cacheValleyCup',
-            pathMatch: 'full'
-          },
           {
             path: 'cupRegistration',
             component: CupRegistrationComponent
@@ -282,11 +267,6 @@ export const router: Routes = [
     component: CompetitionLeagueComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'competitionLeague',
-        pathMatch: 'full'
-      },
-      {
         path: 'challengerSchedule',
         component: SchedulesComponent
       },
@@ -312,11 +292,6 @@ export const router: Routes = [
     path: 'uysaStateCompetition',
     component: UysaStateCompetitionComponent,
     children: [
-      {
-        path: '',
-        redirectTo: 'uysaStateCompetition',
-        pathMatch: 'full'
-      },
       {
         path: 'uysaSchedule',
         component: UysaScheduleComponent
