@@ -47,30 +47,29 @@ import { CupLocationComponent } from './components/events/cache-valley-cup/cup-l
 import { CupCarnivalComponent } from './components/events/cache-valley-cup/cup-carnival/cup-carnival.component';
 import { CupRulesComponent } from './components/events/cache-valley-cup/cup-rules/cup-rules.component';
 import { CupDirectionsComponent } from './components/events/cache-valley-cup/cup-directions/cup-directions.component';
-import { KentonComponent } from './components/resources/articles/kenton/kenton.component';
-import { PersonalFoulParentsComponent } from './components/resources/articles/personal-foul-parents/personal-foul-parents.component';
-import { UsuSoccerComponent } from './components/resources/articles/usu-soccer/usu-soccer.component';
-import { BairLeadLaRoccaComponent } from './components/resources/articles/bair-lead-la-rocca/bair-lead-la-rocca.component';
-import { CvcGrowsComponent } from './components/resources/articles/cvc-grows/cvc-grows.component';
-import { LocalTeamsComponent } from './components/resources/articles/local-teams/local-teams.component';
-import { HandballComponent } from './components/resources/articles/handball/handball.component';
-import { TotalFootballComponent } from './components/resources/articles/total-football/total-football.component';
-import { TeachPrinciplesComponent } from './components/resources/articles/teach-principles/teach-principles.component';
-import { NewLogoComponent } from './components/resources/articles/new-logo/new-logo.component';
-import { SadNewsComponent } from './components/resources/articles/sad-news/sad-news.component';
-import { MonthlyNewsletterComponent } from './components/resources/articles/monthly-newsletter/monthly-newsletter.component';
-import { PresidentsCupComponent } from './components/resources/articles/presidents-cup/presidents-cup.component';
-import { RslLoganFacilityComponent } from './components/resources/articles/rsl-logan-facility/rsl-logan-facility.component';
-import { RefBigTimeComponent } from './components/resources/articles/ref-big-time/ref-big-time.component';
-import { SvSophmoreComponent } from './components/resources/articles/sv-sophmore/sv-sophmore.component';
-import { BannerSeasonComponent } from './components/resources/articles/banner-season/banner-season.component';
-import { GirlsTeamComponent } from './components/resources/articles/girls-team/girls-team.component';
-import { UysaChangesComponent } from './components/resources/articles/uysa-changes/uysa-changes.component';
-import { UysaChampionshipComponent } from './components/resources/articles/uysa-championship/uysa-championship.component';
-import { CoachingLicensesComponent } from './components/resources/articles/coaching-licenses/coaching-licenses.component';
-import { StateCompTryoutsComponent } from './components/resources/articles/state-comp-tryouts/state-comp-tryouts.component';
-import { InterviewComponent } from './components/resources/articles/interview/interview.component';
-import { RslSoundersComponent } from './components/resources/articles/rsl-sounders/rsl-sounders.component';
+import { PersonalFoulParentsComponent } from './components/resources/personal-foul-parents/personal-foul-parents.component';
+import { UsuSoccerComponent } from './components/resources/usu-soccer/usu-soccer.component';
+import { CvcGrowsComponent } from './components/resources/cvc-grows/cvc-grows.component';
+import { LocalTeamsComponent } from './components/resources/local-teams/local-teams.component';
+import { HandballComponent } from './components/resources/handball/handball.component';
+import { TotalFootballComponent } from './components/resources/total-football/total-football.component';
+import { TeachPrinciplesComponent } from './components/resources/teach-principles/teach-principles.component';
+import { NewLogoComponent } from './components/resources/new-logo/new-logo.component';
+import { SadNewsComponent } from './components/resources/sad-news/sad-news.component';
+import { MonthlyNewsletterComponent } from './components/resources/monthly-newsletter/monthly-newsletter.component';
+import { PresidentsCupComponent } from './components/resources/presidents-cup/presidents-cup.component';
+import { RslLoganFacilityComponent } from './components/resources/rsl-logan-facility/rsl-logan-facility.component';
+import { RefBigTimeComponent } from './components/resources/ref-big-time/ref-big-time.component';
+import { SvSophmoreComponent } from './components/resources/sv-sophmore/sv-sophmore.component';
+import { BannerSeasonComponent } from './components/resources/banner-season/banner-season.component';
+import { GirlsTeamComponent } from './components/resources/girls-team/girls-team.component';
+import { UysaChangesComponent } from './components/resources/uysa-changes/uysa-changes.component';
+import { UysaChampionshipComponent } from './components/resources/uysa-championship/uysa-championship.component';
+import { CoachingLicensesComponent } from './components/resources/coaching-licenses/coaching-licenses.component';
+import { StateCompTryoutsComponent } from './components/resources/state-comp-tryouts/state-comp-tryouts.component';
+import { InterviewComponent } from './components/resources/interview/interview.component';
+import { RslSoundersComponent } from './components/resources/rsl-sounders/rsl-sounders.component';
+import { ChoosingLeaguesComponent } from './components/resources/choosing-leagues/choosing-leagues.component';
 
 @NgModule({
   declarations: [
@@ -118,10 +117,8 @@ import { RslSoundersComponent } from './components/resources/articles/rsl-sounde
     CupCarnivalComponent,
     CupRulesComponent,
     CupDirectionsComponent,
-    KentonComponent,
     PersonalFoulParentsComponent,
     UsuSoccerComponent,
-    BairLeadLaRoccaComponent,
     CvcGrowsComponent,
     LocalTeamsComponent,
     HandballComponent,
@@ -141,7 +138,8 @@ import { RslSoundersComponent } from './components/resources/articles/rsl-sounde
     CoachingLicensesComponent,
     StateCompTryoutsComponent,
     InterviewComponent,
-    RslSoundersComponent
+    RslSoundersComponent,
+    ChoosingLeaguesComponent
   ],
   imports: [
     BrowserModule,

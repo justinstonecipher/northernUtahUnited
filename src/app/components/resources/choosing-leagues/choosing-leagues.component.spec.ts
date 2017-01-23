@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { BairLeadLaRoccaComponent } from './bair-lead-la-rocca.component';
+import { ChoosingLeaguesComponent } from './choosing-leagues.component';
 
-describe('BairLeadLaRoccaComponent', () => {
-  let component: BairLeadLaRoccaComponent;
-  let fixture: ComponentFixture<BairLeadLaRoccaComponent>;
+describe('ChoosingLeaguesComponent', () => {
+  let component: ChoosingLeaguesComponent;
+  let fixture: ComponentFixture<ChoosingLeaguesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BairLeadLaRoccaComponent ]
+      declarations: [ ChoosingLeaguesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BairLeadLaRoccaComponent);
+    fixture = TestBed.createComponent(ChoosingLeaguesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
