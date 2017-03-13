@@ -4,11 +4,13 @@
   <div class="col-sm-12">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h3 class=" title"><a routerLink="../CvcSoccerExpo" class="link">Cache Valley Soccer Expo</a></h3>
-        <h5 class="">Join us on Saturday March 4th, 2017 for this years Cache Soccer Expo!</h5>
-        <div class="">This event will be located at Utah State University from 10am - 5:30pm.</div>
-        <div class="">This Event is free to the public!</div>
-        <div class="">A schedule will be posted soon.</div>
+        <h5>{{eventTitle}}</h5>
+          <div>{{summary}}</div>
+          <div>Use the <strong>{{buttonText}}</strong> button below to see that info.</div>
+          <br/>
+          <!--<p>Watch here for all upcoming tournaments, leagues, and activities! We are constantly improving our program and finding
+            ways to improve the soccer community in Cache Valley.</p>-->
+          <a routerLink="../../resources/referees" class="btn btn-primary">{{buttonText}}</a>
       </div>
     </div>
   </div>

@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./soccer-expo.component.less']
 })
 export class SoccerExpoComponent implements OnInit {
-
+  location = 'Utah State University';
+  startTime = '10';
+  startAmPm = 'am';
+  endTime = '5:30';
+  endAmPm = 'pm';
+  date = 'Saturday March 4th, 2017';
   constructor() { }
 
   ngOnInit() {
