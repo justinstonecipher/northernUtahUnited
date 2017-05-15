@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
-  eventTitle = 'Competition and Recreation Referee Clinics';
-  eventSummary = 'Navigate to the Referee page to find all the info you need!';
+  eventTitle = 'RSL Camp Coming to North Logan!';
+  eventSummary = 'The event will take place June 26-29. <a href="www.rslcamps.com">Register Here</a>';
   eventButton = 'Learn More';
   constructor() { }
 

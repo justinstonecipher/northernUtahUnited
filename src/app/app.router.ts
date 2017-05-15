@@ -52,6 +52,10 @@ export const router: Routes = [
     loadChildren: './components/faq/faq.module#FaqModule'
   },
   {
+    path: 'leagues',
+    loadChildren: './components/leagues/leagues/leagues.module#LeaguesModule'
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
