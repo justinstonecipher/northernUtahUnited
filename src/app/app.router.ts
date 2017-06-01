@@ -36,6 +36,10 @@ export const router: Routes = [
     loadChildren:'./components/leagues/uysa-state-competition/uysa-state-competition.module#UysaStateCompetitionModule',
   },
   {
+    path: 'academySoccer',
+    loadChildren:'./components/leagues/academy-soccer/academy-soccer.module#AcademySoccerModule',
+  },
+  {
     path: 'recreation',
     loadChildren: './components/recreation/recreation.module#RecreationModule'
   },
