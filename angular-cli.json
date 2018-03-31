@@ -20,7 +20,8 @@
       "mobile": false,
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "styles.less"
+        "styles.less",
+        "bootstrap.min.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",

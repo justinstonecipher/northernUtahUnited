@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./academy-soccer.component.less']
 })
 export class AcademySoccerComponent implements OnInit {
-
+  currentYear = "Fall 2017";
   constructor() { }
 
   ngOnInit() {
