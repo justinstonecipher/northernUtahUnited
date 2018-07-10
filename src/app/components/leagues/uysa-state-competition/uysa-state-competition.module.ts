@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { UysaStateCompetitionComponent } from './uysa-state-competition.component';
 import { UysaScheduleComponent } from '../uysa-state-competition/uysa-schedule/uysa-schedule.component';
@@ -11,7 +12,10 @@ import { UysaSideBarComponent } from '../../sideBars/uysa-side-bar/uysa-side-bar
 import { routing } from './uysa-state-competition.routing';
 
 @NgModule({
-    imports: [routing],
+    imports: [
+        routing,
+        CommonModule,
+    ],
     declarations: [
         UysaStateCompetitionComponent,
         UysaScheduleComponent,

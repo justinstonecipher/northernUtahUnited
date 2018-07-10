@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { CompetitionLeagueComponent } from './competition-league.component';
 import { SchedulesComponent } from '../competition-league/schedules/schedules.component';
@@ -11,7 +12,10 @@ import { CompetitionSideBarComponent } from '../../sideBars/competition-side-bar
 import { routing } from './competition-league.routing';
 
 @NgModule({
-    imports: [routing],
+    imports: [
+        routing,
+        CommonModule,
+    ],
     declarations: [
         CompetitionLeagueComponent,
         SchedulesComponent,

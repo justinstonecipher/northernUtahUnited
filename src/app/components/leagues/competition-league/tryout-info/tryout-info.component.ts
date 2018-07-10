@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tryout-info.component.less']
 })
 export class TryoutInfoComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
+    
   }
-
 }
