@@ -18,15 +18,17 @@
       </div>
       <div class="col-lg-12">
 
-        <ul id="myTab" class="nav nav-tabs nav-justified">
-          <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Recreational Referees</a>
+        <ul id="myTab" class="nav nav-tabs" role="tablist">
+          <li class="nav-link active">
+            <a href="#recreation" data-toggle="tab" role="tab" aria-controls="recreational" aria-selected="true"><i class="fa fa-tree"></i> Recreational Referees</a>
           </li>
-          <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Competition Referees</a>
+          <li class="nav-link">
+            <a href="#competition" data-toggle="tab" role="tab" aria-controls="competition" aria-selected="false"><i class="fa fa-car"></i> Competition Referees</a>
           </li>
         </ul>
 
         <div id="myTabContent" class="tab-content">
-          <div class="tab-pane fade active in" id="service-one">
+          <div class="tab-pane fade show active" id="recreation" role="tabpanel" aria-labelledby="recreation">
             <h4>Recreational Referees</h4>
             <div class="col-lg-10">
               <h4>Spring 2018 Rec Referee Certification</h4>
@@ -54,7 +56,7 @@
               <p>For the <strong>North Logan </strong>areas contact Jana Carling at: 755-8737</p>
             </div>
           </div>
-          <div class="tab-pane fade" id="service-two">
+          <div class="tab-pane fade" id="competition" role="tabpanel" aria-labelledby="competition">
             <h4>Competition Referees</h4>
             <div class="col-lg-10">
               <h4>Logan Entry Level Clinic</h4>

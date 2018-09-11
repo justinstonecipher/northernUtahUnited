@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
   <div class="navbar-header">
     <a class="navbar-brand text-lg visible-lg" routerLink="home">Northern Utah United</a>
     <a class="navbar-brand visible-md visible-sm visible-xs" routerLink="home">NUU</a>
@@ -35,21 +35,71 @@
       <li class="nav-item"><a href="http://uysa.affinitysoccer.com/reg/index.asp?sessionguid=" class="nav-link">Affinity Soccer</a></li>
     </ul>
   </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+  <a class="navbar-brand active" routerLink="home">Northern Utah United
+    <span class="sr-only">(current)</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="resources/downloads">Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="events/upcomingEvents">Events</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Leagues &amp; Programs
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="competitionLeague/challengerSchedule">Challenger League</a>
+          <a class="dropdown-item" routerLink="uysaStateCompetition/uysaSchedule">UYSA State Competition</a>
+          <a class="dropdown-item" routerLink="academySoccer">Academy &amp; Lil' Kickers</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="recreation">Recreation</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right visible-lg">
+      <li class="nav-item">
+        <a href="http://uysa.affinitysoccer.com/reg/index.asp?sessionguid=" class="nav-link">Affinity Soccer</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 <div class="pad-top">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
 
 
 <footer>
   <div class="container">
-    <div class="row">
-      <p class="col-sm-3"> &copy; Northern Utah United</p>
-      <p class="col-sm-1"><a routerLink="faq" class="no-link">FAQ</a></p>
-      <p class="col-sm-1"><a href="/documents/NUU_Bylaws_2018_1.pdf" class="no-link">Legal</a></p>
-      <p class="col-sm-1"><a routerLink="contact" class="no-link">Contact</a></p>
-      <p class="col-sm-3"><a href="http://utahyouthsoccer.net" class="no-link">Utah Youth Soccer</a></p>
-      <p class="col-sm-3"><a href="http://facebook.com/NorthernUtahUnited" class="no-link">NUU Facebook</a></p>
-    </div>
+    <p class="col-sm-3"> &copy; Northern Utah United</p>
+    <p class="col-sm-1">
+      <a routerLink="faq" class="no-link">FAQ</a>
+    </p>
+    <p class="col-sm-1">
+      <a href="/documents/NUU_Bylaws_2018_1.pdf" class="no-link">Legal</a>
+    </p>
+    <p class="col-sm-1">
+      <a routerLink="contact" class="no-link">Contact</a>
+    </p>
+    <p class="col-sm-3">
+      <a href="http://utahyouthsoccer.net" class="no-link">Utah Youth Soccer</a>
+    </p>
+    <p class="col-sm-3">
+      <a href="http://facebook.com/NorthernUtahUnited" class="no-link">NUU Facebook</a>
+    </p>
   </div>
 </footer>
