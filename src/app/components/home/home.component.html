@@ -1,7 +1,9 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">Northern Utah United Soccer</h1>
-    <p class="lead">Youth Soccer at it's finest</p>
+    <div class="col-xs-12">
+        <h1 class="">Northern Utah United Soccer</h1>
+        <p class="lead">Youth Soccer at it's finest</p>
+    </div>
   </div>
 </div>
 
@@ -22,24 +24,24 @@
     <div class="col-lg-12 padding-bottom">
       <div id="news" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ul class="carousel-indicators">
+        <!-- <ul class="carousel-indicators">
           <li data-target="#news" data-slide-to="0" class="active"></li>
           <li data-target="#news" data-slide-to="1"></li>
           <li data-target="#news" data-slide-to="2"></li>
           <li data-target="#news" data-slide-to="3"></li>
           <li data-target="#news" data-slide-to="4"></li>
-        </ul>
+        </ul> -->
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <h3><strong>NUU hires Jeff Ginn from RSL Academy as Director of Coaching!</strong></h3>
+            <h3><strong>Destination Soccer for Kindergartners starts {{DestinationSoccerStartDate}} <a class="no-link" routerLink="../destinationSoccer">click here for more information</a></strong></h3>
           </div>
           <div class="carousel-item">
             <h3><strong>Watch here for any updates and upcoming events</strong></h3>
           </div>
-          <div class="carousel-item">
-            <h3><strong>NUU hires Jeff Ginn from RSL Academy as Director of Coaching!</strong></h3>
-          </div>
+          <!-- <div class="carousel-item">
+            <h3><strong>High School Preparation Training Starts November 26th <a routerLink="../highSchoolPrep">click here for more Information</a></strong></h3>
+          </div> -->
         </div>
       </div>
     </div>
@@ -51,7 +53,7 @@
         <div class="panel-body">
           <p>Tucked away in beautiful Cache Valley, Northern Utah United is Cache Valley&#39;s competitive soccer club. We welcome
             all ages to come play, and learn the best sport in the world!</p>
-          <a routerLink="../about" class="btn btn-primary">Learn More</a>
+          <a routerLink="../about" class="btn btn-primary about">Learn More</a>
         </div>
       </div>
     </div>
@@ -67,9 +69,24 @@
           <br/>-->
           <!--<a href="/documents/GoalAuction.pdf" class="list-group-item list-group-item-secondary"><h5>Goal Auction Information</h5></a>
      <br/>-->
-          <p>Watch here for all upcoming tournaments, leagues, and activities! We are constantly improving our program and finding
-            ways to improve the soccer community in Cache Valley.</p>
-          <a routerLink="../events/upcomingEvents" class="btn btn-primary">{{eventButton}}</a>
+     <p>Rec Referee Certification Classes Start February 9th</p>
+     <p>Richmond in-person Recreation Soccer Registration is February 23</p>
+     <p>Recreation Soccer Registration Now Open through March 1!</p>
+     <p>Destination Soccer registation open for February and March</p>
+          <!-- <p>Watch here for all upcoming tournaments, leagues, and activities! We are constantly improving our program and finding
+            ways to improve the soccer community in Cache Valley.</p> -->
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{eventButton}}
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" routerLink="../recreation">Recreation Registration</a>
+                <a class="dropdown-item" routerLink="../recreation">Richmond in-person Registration</a>
+                <a class="dropdown-item" routerLink="../resources/referees">Referee Cert Classes</a>
+                <a class="dropdown-item" routerLink="../destinationSoccer">Destination Soccer Registration</a>
+              </div>
+            </div>
+          <!-- <a routerLink="../recreation" class="btn btn-primary upcoming">{{eventButton}}</a> -->
         </div>
       </div>
     </div>
@@ -78,10 +95,10 @@
         <div class="panel-heading">
           <h4 class="text-white"><i class="fa fa-fw fa-compass"></i> NUU Events</h4>
         </div>
-        <div class="panel-body events-panel">
+        <div class="panel-body">
           <p>NUU celebrations are always the best part of any tournament! we provide family friendly events for all ages to
             come enjoy.</p>
-          <a routerLink="../events/cacheValleyCup" class="btn btn-primary">Learn More</a>
+          <a routerLink="../events/cacheValleyCup" class="btn btn-primary events">Learn More</a>
         </div>
       </div>
     </div>
@@ -95,7 +112,7 @@
     </div>
     <div class="col-md-4 col-sm-6 padding-bottom">
       <a routerLink="../resources/downloads" class="link">
-        <img class="img-responsive img-portfolio img-hover" src="/images/ref-600.jpg" alt="">
+        <img class="img-responsive img-portfolio img-hover image-shadow" src="/images/ref-600.jpg" alt="">
         <div>
           <h3 class="post-content">Resources</h3>
         </div>
@@ -103,7 +120,7 @@
     </div>
     <div class="col-md-4 col-sm-6 padding-bottom">
       <a routerLink="../events/upcomingEvents" class="link">
-        <img class="img-responsive img-portfolio img-hover" src="/images/shutterstock_237343282.jpg" alt="">
+        <img class="img-responsive img-portfolio img-hover image-shadow" src="/images/shutterstock_237343282.jpg" alt="">
         <div>
           <h3 class="post-content">Events</h3>
         </div>
@@ -111,7 +128,7 @@
     </div>
     <div class="col-md-4 col-sm-6 padding-bottom">
       <a routerLink="../leagues" class="link">
-        <img class="img-responsive img-portfolio img-hover" src="/images/shutterstock_396303802.jpg" alt="">
+        <img class="img-responsive img-portfolio img-hover image-shadow" src="/images/shutterstock_396303802.jpg" alt="">
         <div>
           <h3 class="post-content">Leagues &amp; Programs</h3>
         </div>
@@ -119,7 +136,7 @@
     </div>
     <div class="col-md-4 col-sm-6 padding-bottom">
       <a routerLink="../recreation" class="link">
-        <img class="img-responsive img-portfolio img-hover" src="/images/shutterstock_260402759.jpg" alt="">
+        <img class="img-responsive img-portfolio img-hover image-shadow" src="/images/shutterstock_260402759.jpg" alt="">
         <div>
           <h3 class="post-content">Recreation</h3>
         </div>
@@ -127,7 +144,7 @@
     </div>
     <div class="col-md-4 col-sm-6 padding-bottom">
       <a routerLink="../events/cacheValleyCup" class="link">
-        <img class="img-responsive img-portfolio img-hover" src="/images/shutterstock_105224906.jpg" alt="">
+        <img class="img-responsive img-portfolio img-hover image-shadow" src="/images/shutterstock_105224906.jpg" alt="">
         <div>
           <h3 class="post-content">Tournaments</h3>
         </div>
@@ -135,7 +152,7 @@
     </div>
     <div class="col-md-4 col-sm-6 padding-bottom">
       <a routerLink="../about" class="link">
-        <img class="img-responsive img-portfolio img-hover" src="/images/shutterstock_304629680.jpg" alt="">
+        <img class="img-responsive img-portfolio img-hover image-shadow" src="/images/shutterstock_304629680.jpg" alt="">
         <div>
           <h3 class="post-content">About Us and Affiliated Teams</h3>
         </div>

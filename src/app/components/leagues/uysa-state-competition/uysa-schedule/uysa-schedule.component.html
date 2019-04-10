@@ -3,44 +3,89 @@
 </div>
 <div class="col-lg-10">
   <div class="col-md-6 img-portfolio">
-    <a href="https://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=1DE0B73B-6576-4C54-9156-A132656B0984">
-      <img class="img-responsive img-hover" src="/images/shutterstock_1728558.jpg" alt="">
+    <a (click)="setModalData('boys')" data-toggle="modal" data-target="#modal">
+      <img class="img-responsive img-hover image-shadow" src="/images/shutterstock_1728558.jpg" alt="">
     </a>
     <h3>
-      <a href="https://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=1DE0B73B-6576-4C54-9156-A132656B0984">{{currentYear}} Boys SCL, IRL, X-League Schedules</a>
+      <a (click)="setModalData('boys')" data-toggle="modal" data-target="#modal">{{currentYear}} Boys SCL, IRL, X-League
+        Schedules</a>
     </h3>
   </div>
   <div class="col-md-6 img-portfolio">
-    <a href="https://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=1DE0B73B-6576-4C54-9156-A132656B0984&show=girls">
-      <img class="img-responsive img-hover" src="/images/shutterstock_80550457.jpg" alt="">
+    <a (click)="setModalData('girls')" data-toggle="modal" data-target="#modal">
+      <img class="img-responsive img-hover image-shadow" src="/images/shutterstock_80550457.jpg" alt="">
     </a>
     <h3>
-      <a href="https://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=1DE0B73B-6576-4C54-9156-A132656B0984&show=girls">{{currentYear}} Girls SCL, IRL, X-League Schedules</a>
+      <a (click)="setModalData('girls')" data-toggle="modal" data-target="#modal">{{currentYear}} Girls SCL, IRL,
+        X-League Schedules</a>
     </h3>
   </div>
 </div>
 <div class="col-lg-10">
-  <br/>
+  <br />
   <h3>Important Info</h3>
   <a href="../documents/ProgramsSterling.pdf" class="no-link">Sterling Program</a>
 </div>
 <div class="col-lg-10">
-  <br/>
+  <br />
   <h4>Previous Years Schedules</h4>
   <div class="col-lg-5">
     <p>
-      <a href="http://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=91C70238-454B-4885-AABB-12B8B1CAEABB&show=boys">{{springSeventeen}} UYSA Boys</a>
+      <a
+        href="http://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=91C70238-454B-4885-AABB-12B8B1CAEABB&show=boys">{{springSeventeen}}
+        UYSA Boys</a>
     </p>
     <p>
-      <a href="http://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=714A94A4-B78D-421F-9EC7-0FCF25060908&show=boys">{{twentySixteen}} UYSA Boys</a>
+      <a
+        href="http://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=714A94A4-B78D-421F-9EC7-0FCF25060908&show=boys">{{twentySixteen}}
+        UYSA Boys</a>
+    </p>
+    <p>
+      <a
+        href="https://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=1DE0B73B-6576-4C54-9156-A132656B0984">{{fallSeventeen}}
+        UYSA Boys</a>
     </p>
   </div>
   <div class="col-lg-5">
     <p>
-      <a href="http://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=91C70238-454B-4885-AABB-12B8B1CAEABB&show=girls">{{springSeventeen}} UYSA Girls</a>
+      <a
+        href="http://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=91C70238-454B-4885-AABB-12B8B1CAEABB&show=girls">{{springSeventeen}}
+        UYSA Girls</a>
     </p>
     <p>
-      <a href="http://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=714A94A4-B78D-421F-9EC7-0FCF25060908&show=girls">{{twentySixteen}} UYSA Girls</a>
+      <a
+        href="http://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=714A94A4-B78D-421F-9EC7-0FCF25060908&show=girls">{{twentySixteen}}
+        UYSA Girls</a>
     </p>
+    <p>
+      <a
+        href="https://uysa.affinitysoccer.com/tour/public/info/accepted_list.asp?sessionguid=&tournamentguid=1DE0B73B-6576-4C54-9156-A132656B0984&show=girls">{{fallSeventeen}}
+        UYSA Girls</a>
+    </p>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{title}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="col-sm-12 pad-md">
+        <div class="col-sm-6">
+          <a class="btn btn-primary" target="_blank" href="{{xLeague}}">SCL, IRL, X-League</a>
+        </div>
+        <div class="col-sm-6">
+          <a class="btn btn-primary" target="_blank" href="{{premierLeague}}">Premier League</a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>

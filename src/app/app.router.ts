@@ -40,6 +40,14 @@ export const router: Routes = [
     loadChildren:'./components/leagues/academy-soccer/academy-soccer.module#AcademySoccerModule',
   },
   {
+    path: 'destinationSoccer',
+    loadChildren:'./components/leagues/destination-soccer/destination-soccer.module#DestinationSoccerModule',
+  },
+  {
+    path: 'highSchoolPrep',
+    loadChildren:'./components/leagues/high-school-prep/high-school-prep.module#HighSchoolPrepModule',
+  },
+  {
     path: 'recreation',
     loadChildren: './components/recreation/recreation.module#RecreationModule'
   },

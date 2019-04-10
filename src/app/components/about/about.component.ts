@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   constructor() { }
-
+  modalYear: number;
   ngOnInit() {
+  }
+  
+  setYear(year: number) {
+    this.modalYear = year;
   }
 
 }

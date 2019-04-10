@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
-
 enableProdMode();
 
 @NgModule({
@@ -24,7 +23,7 @@ enableProdMode();
     BrowserModule,
     FormsModule,
     HttpModule,
-    routes
+    routes,
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

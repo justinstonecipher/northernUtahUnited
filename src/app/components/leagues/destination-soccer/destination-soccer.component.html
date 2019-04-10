@@ -1,0 +1,196 @@
+<div class="container">
+  <div class="row page-head">
+    <div class="col-lg-12">
+      <h1 class="page-header">Destination Soccer
+      </h1>
+      <ol class="breadcrumb">
+        <li><a routerLink="../home">Home</a>
+        </li>
+        <li class="active">Destination Soccer</li>
+      </ol>
+    </div>
+  </div>
+  <div class="container pad-top-md">
+    <h2>NUU Destination Soccer for Kindergartners at the Real Salt Lake Indoor Facility</h2>
+    <div class="col-lg-12 pad-top-md">
+      <div class="row">
+        <div class="col-lg-12">
+          <div><a class=""
+              href="https://docs.google.com/document/d/16iHj1I9w7STOJkqWR-jzrmw93RYkNe5MwiqIqq6asXU/edit?usp=sharing">SEE
+              EVERY PLAYERS PROGRESS THROUGH THE DESTINATION SOCCER PROGRAM</a></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 pad-top-md">
+          <select class="shadow" onChange="window.location.href=this.value">
+            <option class="text-blue">Select the month you wish to register for</option>
+            <option *ngFor="let m of months" value="{{m.link}}">
+              {{m.month}}
+            </option>
+          </select>
+          <!-- <br/>
+          <a target="_blank" href="https://uysa.affinitysoccer.com/eventmanager/public/event.asp?calid=10291834" class="btn btn-primary shadow"><h4>Destination
+              Program November Registration</h4></a> -->
+        </div>
+      </div>
+      <div class="pad-top-md">
+        <br />
+        <p><strong>Note:</strong> players that participated in another Northern Utah United program this fall will have
+          their
+          registration fees waived. Others will need to pay the registration fee and insurance when registering online.
+        </p>
+      </div>
+      <h4 class="pad-top-md">Destination Soccer</h4>
+      <table class="col-lg-12 padding-bottom-md shadow">
+        <tr>
+          <th class="col-lg-3">Registration Deadline</th>
+          <th class="col-lg-1">Cost</th>
+          <th class="col-lg-2">Player Capacity</th>
+          <th class="col-lg-3">Instructor</th>
+        </tr>
+        <tr>
+          <td>WHEN EACH SESSION REACHES CAPACITY</td>
+          <td>$30</td>
+          <td>24 per session</td>
+          <td>NUU Director of Coaching Jeff Ginn</td>
+        </tr>
+      </table>
+      <div *ngFor="let session of sessionData">
+        <h3 class="">{{session.month}}</h3>
+        <table class="col-lg-12 padding-bottom-large shadow">
+          <tr>
+            <th class="col-lg-3" *ngFor="let date of session.sessionDates">
+              {{date.overViewDates}}
+            </th>
+          </tr>
+          <tr>
+            <td *ngFor="let date of session.sessionDates">{{date.dates}}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let date of session.sessionDates" [innerHTML]="date.sessionTimes"></td>
+          </tr>
+        </table>
+        <h4 *ngIf="session.games.length > 0">Games</h4>
+        <ul *ngFor="let game of session.games" class="pad-bottom-md">
+          <li>{{game.gameTime}}</li>
+          <li>{{game.gameDays}}</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="">{{location.city}}</h3>
+        <h5>{{location.address}}</h5>
+        <table class="col-lg-12 padding-bottom-large shadow">
+          <tr>
+            <th class="col-lg-3" *ngFor="let date of location.sessionsDates">
+              {{date.overViewDates}}
+            </th>
+          </tr>
+          <tr>
+            <td *ngFor="let date of location.sessionsDates">{{date.dates}}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let date of location.sessionsDates" [innerHTML]="date.sessionTimes"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="pad-top-md"><a class=""
+          href="https://docs.google.com/document/d/16iHj1I9w7STOJkqWR-jzrmw93RYkNe5MwiqIqq6asXU/edit?usp=sharing">SEE
+          EVERY PLAYERS PROGRESS THROUGH THE DESTINATION SOCCER PROGRAM</a></div>
+      <select class="shadow mar-top-md" onChange="window.location.href=this.value">
+        <option>Select the month you wish to register for</option>
+        <option *ngFor="let m of months" value="{{m.link}}">
+          {{m.month}}
+        </option>
+      </select>
+      <h4 class="pad-top-md">Description</h4>
+      <ul>
+        <li>Example of an hour long session:</li>
+        <li> Minutes 0-12: Free play 1 vs 1, 2 vs 2 or 3 vs 3</li>
+        <li> Minutes 12- 13: Water break</li>
+        <li> Minutes 13-24: Age appropriate activity #1</li>
+        <li> Minutes 26-27: Water break</li>
+        <li> Minutes 27-39: Age appropriate activity #2</li>
+        <li> Minutes 39-40: Water break</li>
+        <li> Minutes 40-60: Play 1 vs 1, 2 vs 2 or 3 vs 3</li>
+      </ul>
+      <br />
+      <p>Each player will be responsible to have a parent assist the coaching staff one of the four days of instruction
+        as
+        assigned by the NUU staff. The activities will be provided for the adult and are be geared towards 6- 8
+        players.
+        Each player needs to bring their own size 3 soccer ball. </p>
+
+      <p>For any questions please email <a href="mailto:NUUginn@gmail.com">NUUginn@gmail.com</a></p>
+
+      <h2>Friday Kindergarten Games (4 weeks)</h2>
+      <table class="col-lg-12 padding-bottom-large shadow">
+        <tr>
+          <th class="col-lg-3">Registration Deadline</th>
+          <th class="col-lg-1">Cost</th>
+          <th class="col-lg-2">Player Capacity</th>
+          <th class="col-lg-3">Instructor</th>
+        </tr>
+        <tr>
+          <td>WHEN EACH SESSION REACHES CAPACITY</td>
+          <td>$20</td>
+          <td>24 per session</td>
+          <td>NUU Director of Coaching Jeff Ginn</td>
+        </tr>
+      </table>
+      <div class="pad-top-md"><a class=""
+          href="https://docs.google.com/document/d/16iHj1I9w7STOJkqWR-jzrmw93RYkNe5MwiqIqq6asXU/edit?usp=sharing">SEE
+          EVERY PLAYERS PROGRESS THROUGH THE DESTINATION SOCCER PROGRAM</a></div>
+
+      <select class="shadow mar-top-md" onChange="window.location.href=this.value">
+        <option>Select the month you wish to register for</option>
+        <option *ngFor="let m of months" value="{{m.link}}">
+          {{m.month}}
+        </option>
+      </select>
+      <h4 class="pad-top-md">Session Dates</h4>
+      <table class="col-lg-12 padding-bottom-large shadow">
+        <tr>
+          <th class="col-lg-12">Mondays March 4 - March 25</th>
+        </tr>
+        <tr>
+          <td>March 4, 11, 18, &amp; 25</td>
+        </tr>
+        <tr>
+          <td>
+            AM Sessions: 10:00-11:00 AM
+            <br /> PM Sessions: 1:30-2:30 PM
+          </td>
+        </tr>
+      </table>
+      <br />
+      <div class="pad-top-md"><a class=""
+          href="https://docs.google.com/document/d/16iHj1I9w7STOJkqWR-jzrmw93RYkNe5MwiqIqq6asXU/edit?usp=sharing">SEE
+          EVERY PLAYERS PROGRESS THROUGH THE DESTINATION SOCCER PROGRAM</a></div>
+      <select class="shadow mar-top-md" onChange="window.location.href=this.value">
+        <option>Select the month you wish to register for</option>
+        <option *ngFor="let m of months" value="{{m.link}}">
+          {{m.month}}
+        </option>
+      </select>
+      <h4 class="pad-top-md">Description</h4>
+      <ul>
+        <li>1 Day of games each week</li>
+        <li>3-4 rounds of 6 minute games after 5 minutes of warm up</li>
+        <li>2 vs 2 on small fields</li>
+        <li>Every week each player will be paired up with another player and play on the same team that entire day</li>
+      </ul>
+      <br />
+      <p>Each player will be responsible to have a parent participate in one day of team management. The activities are
+        provided
+        for the adult and will be designed for 6- 8 players. Each player needs to bring their own size 3 soccer ball.
+      </p>
+
+      <p>For any questions please email <a href="mailto:NUUginn@gmail.com">NUUginn@gmail.com</a></p>
+    </div>
+    <div class="col-sm-12">
+      <h4>Follow us!</h4>
+      <a href="https://www.instagram.com/destinationsoccernuu/" class="no-link"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/destinationsoccer/" class="no-link"><i class="-facebook-square"></i></a>
+    </div>
+  </div>
+</div>
