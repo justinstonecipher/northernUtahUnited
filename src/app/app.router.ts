@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component'
+import { TryoutGuideComponent } from './components/tryout-guide/tryout-guide.component';
 
 export const router: Routes = [
   {
@@ -66,6 +67,10 @@ export const router: Routes = [
   {
     path: 'leagues',
     loadChildren: './components/leagues/leagues/leagues.module#LeaguesModule'
+  },
+  {
+    path: 'tryoutGuide',
+    component: TryoutGuideComponent
   },
   {
     path: '**',

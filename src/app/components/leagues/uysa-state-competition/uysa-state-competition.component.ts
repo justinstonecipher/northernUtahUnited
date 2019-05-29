@@ -36,7 +36,7 @@ usyaGoogleFormResponses: any[] = [];
         callback(result);
       }
     }
-    xmlHttp.open("GET", 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSBzweT_gJxNa5ez1jfEvrCJnt6sAxToXshf8MS-Ol-8l66uUzbKeKXstyBm8ynf3DTfiDUVT9R9bl2/pub?gid=75788371&single=true&output=csv', true); 
+    xmlHttp.open("GET", 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRVOpK8ZGhO6WPEjLDUeaEEu-yWqXqmWE4o6VRYg7QvqAOoAisqc9cTAbpH_KfkxTO1NMyYcVQUIJNO/pub?gid=1930689121&single=true&output=csv', true); 
     xmlHttp.setRequestHeader('Accept', 'application/json');
     xmlHttp.send(null);
   }

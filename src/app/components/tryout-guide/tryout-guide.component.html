@@ -1,0 +1,401 @@
+<div class="container">
+  <div class="row page-head">
+    <div class="col-lg-12">
+      <h1 class="page-header">Tryout Guide
+        <small>Northern Utah United</small>
+      </h1>
+      <a class="form-request-button hidden-sm hidden-xs"
+        href="https://drive.google.com/open?id=1Aet7L6369GX_ZbDnvqncBrr5c9GYUi1FvY2BhycNps4" target="_blank">Request NUU
+        Team Site Template</a>
+      <ol class="breadcrumb">
+        <li><a routerLink="../home">Home</a>
+        </li>
+        <li class="active">Tryout Guide</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <a class="form-request-button hidden-md hidden-lg hidden-xl"
+      href="https://drive.google.com/open?id=1Aet7L6369GX_ZbDnvqncBrr5c9GYUi1FvY2BhycNps4" target="_blank">Request
+      Site</a>
+    <div class="col-sm-12">
+      <button type="button" (click)="scrollToTryoutInfo()" class="btn btn-warning tryout">Individual Team Tryout Info</button>
+    </div>
+    <div class="col-sm-12 center center-pad">
+      <div>Programs are Identified in colors to represent the level of ambition a player and their family should have to
+        participate in.</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 center">
+      <span class="less-ambitious">Less Ambitious </span>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" (click)="scrollToIndependent()" class="btn btn-secondary button-cursor white"></button>
+        <button type="button" (click)="scrollToChallenger()" class="btn btn-secondary button-cursor nuu-blue"></button>
+        <button type="button" (click)="scrollToXLeague()" class="btn btn-secondary button-cursor red"></button>
+        <button type="button" (click)="scrollToState()" class="btn btn-secondary button-cursor yellow"></button>
+        <button type="button" (click)="scrollToSterling()" class="btn btn-secondary button-cursor sterling"></button>
+        <button role="button" (click)="scrollToRoyal()" class="btn btn-secondary button-cursor royal"></button>
+      </div>
+      <span class="more-ambitious">More Ambitious </span>
+    </div>
+    <div class="col-sm-12 center">
+      <h5>Ambition is defined by a number of things, but mostly commitment levels, coaching levels/experience and a
+        desired destination for the players</h5>
+      <!-- <h4>Please select an option to choose gender and team options</h4> -->
+    </div>
+    <div class="col-sm-12 center">
+      <div>Note: If you do not find a team that suits you during the tryout process we will have a "catch all" tryout
+        Friday, May 31 & Saturday, June 1. <a target="_blank" href="https://sites.google.com/view/nuucatchalltryoutinformation/home">Click here for details.</a> </div>
+    </div>
+  </div>
+  <div class="row nuu-leagues">
+    <div class="col-sm-4">
+      <h3>NUU Recreation Soccer</h3>
+      <div>Fall 2019 <a routerLink="../recreation">Registration &amp; Information</a></div>
+    </div>
+    <div class="col-sm-4">
+      <h3>NUU Destination Soccer (4-7 Year Olds)</h3>
+      <div>Summer 2019 (June) <a routerLink="../destinationSoccer">Registration &amp; Information</a></div>
+    </div>
+    <div class="col-sm-4">
+      <h3>NUU Pick-Up Soccer</h3>
+      <div>Summer 2019 <a href="https://forms.gle/spNDKutezs8W1YLY7" target="_blank">Sign up sheet</a></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 banner-color margin-bottom" id="independent">
+      <h1 class="white-title">NUU Independent Teams</h1>
+      <a class="form-request-button hidden-sm hidden-xs"
+        href="https://drive.google.com/open?id=1Aet7L6369GX_ZbDnvqncBrr5c9GYUi1FvY2BhycNps4" target="_blank">Request NUU
+        Team Site Template</a>
+      <button type="button" class="btn btn-secondary info-button" (click)="setModalInfo('Independent Teams', 1)"
+        data-toggle="modal" data-target="#modal">Learn About Independent Teams</button>
+    </div>
+    <a class="form-request-button-sm hidden-md hidden-lg hidden-xl"
+      href="https://drive.google.com/open?id=1Aet7L6369GX_ZbDnvqncBrr5c9GYUi1FvY2BhycNps4" target="_blank">Request
+      Site</a>
+    <div id="challenger" class="col-sm-12 gray">
+      <div class="col-sm-12 center">
+        <h2>Challenger League</h2>
+      </div>
+      <div class="col-sm-12 center">
+        <h4><a routerLink="../competitionLeague/challengerSchedule">Learn about the local competition</a></h4>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="col-sm-12">
+        <div class="col-sm-6">
+          <h3>Boys Teams</h3>
+          <ul class="list-group" *ngFor="let year of yearList">
+            <li class="list-group-item flex-column align-items-star">
+              <div class="d-flex w-100 justify-content-between">
+                <h4 class="mb-1">{{year}}</h4>
+              </div>
+              <div *ngFor="let team of teamList">
+                <div *ngIf="team.Gender === 'Boys' && year.includes(team.Year) && team.TeamLevel === 'Challenger'"><a
+                    [href]="team.Url">{{team.TeamName}}</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h3>Girls Teams</h3>
+          <ul class="list-group" *ngFor="let year of yearList">
+            <li class="list-group-item flex-column align-items-star">
+              <div class="d-flex w-100 justify-content-between">
+                <h4 class="mb-1">{{year}}</h4>
+              </div>
+              <div *ngFor="let team of teamList">
+                <div *ngIf="team.Gender === 'Girls' && year.includes(team.Year) && team.TeamLevel === 'Challenger'"><a
+                    [href]="team.Url">{{team.TeamName}}</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 gray" id="xleague">
+        <div class="col-sm-12 center">
+          <h2>X-League /IRL</h2>
+        </div>
+        <div class="col-sm-12 center">
+          <h4><a href="http://www.utahyouthsoccer.net/programs/scl_irl__xleague/">Learn about the X-League/IRL
+              competition</a></h4>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="col-sm-6">
+          <h3>Boys Teams</h3>
+          <ul class="list-group" *ngFor="let year of xLeagueYearList">
+            <li class="list-group-item flex-column align-items-star">
+              <div class="d-flex w-100 justify-content-between">
+                <h4 class="mb-1">{{year}}</h4>
+              </div>
+              <div *ngFor="let team of teamList">
+                <div *ngIf="team.Gender === 'Boys' && year.includes(team.Year) && team.TeamLevel === 'XLeague'"><a
+                    [href]="team.Url">{{team.TeamName}}</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h3>Girls Teams</h3>
+          <ul class="list-group" *ngFor="let year of xLeagueYearList">
+            <li class="list-group-item flex-column align-items-star">
+              <div class="d-flex w-100 justify-content-between">
+                <h4 class="mb-1">{{year}}</h4>
+              </div>
+              <div *ngFor="let team of teamList">
+                <div *ngIf="team.Gender === 'Girls' && year.includes(team.Year) && team.TeamLevel === 'XLeague'"><a
+                    [href]="team.Url">{{team.TeamName}}</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="gray col-sm-12" id="state">
+        <div class="col-sm-12 center">
+          <h2>State Competition</h2>
+        </div>
+        <div class="col-sm-12 center">
+          <h4><a href="http://www.utahyouthsoccer.net/programs/scl_irl__xleague/">Learn about State competition</a></h4>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="col-sm-6">
+          <h3>Boys Teams</h3>
+          <ul class="list-group" *ngFor="let year of yearList">
+            <li class="list-group-item flex-column align-items-star">
+              <div class="d-flex w-100 justify-content-between">
+                <h4 class="mb-1">{{year}}</h4>
+              </div>
+              <div *ngFor="let team of teamList">
+                <div *ngIf="team.Gender === 'Boys' && year.includes(team.Year) && team.TeamLevel === 'State'"><a
+                    [href]="team.Url">{{team.TeamName}}</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h3>Girls Teams</h3>
+          <ul class="list-group" *ngFor="let year of yearList">
+            <li class="list-group-item flex-column align-items-star">
+              <div class="d-flex w-100 justify-content-between">
+                <h4 class="mb-1">{{year}}</h4>
+              </div>
+              <div *ngFor="let team of teamList">
+                <div *ngIf="team.Gender === 'Girls' && year.includes(team.Year) && team.TeamLevel === 'State'"><a
+                    [href]="team.Url">{{team.TeamName}}</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 banner-color" id="sterling">
+        <h1 class="white-title">NUU Sterling Teams</h1>
+        <a class="form-request-button hidden-sm hidden-xs"
+          href="https://drive.google.com/open?id=1Aet7L6369GX_ZbDnvqncBrr5c9GYUi1FvY2BhycNps4" target="_blank">Request
+          NUU
+          Team Site Template</a>
+        <div class="white-title note">NOTE: Each Sterling team decides to play in one of the following leagues: X-League
+          -
+          State - Challenger</div>
+        <button type="button" class="btn btn-secondary info-button" (click)="setModalInfo('Sterling Teams', 2)"
+          data-toggle="modal" data-target="#modal">Learn About Sterling Teams</button>
+      </div>
+      <a class="form-request-button-sm hidden-md hidden-lg hidden-xl"
+        href="https://drive.google.com/open?id=1Aet7L6369GX_ZbDnvqncBrr5c9GYUi1FvY2BhycNps4" target="_blank">Request
+        Site</a>
+      <div class="col-sm-12">
+
+      </div>
+      <div class="col-sm-6">
+        <h3>Boys Teams</h3>
+        <ul class="list-group" *ngFor="let year of boysSterlingYearList">
+          <li class="list-group-item flex-column align-items-star">
+            <div class="d-flex w-100 justify-content-between">
+              <h4 class="mb-1">{{year}}</h4>
+            </div>
+            <div *ngFor="let team of teamList">
+              <div *ngIf="team.Gender === 'Boys' && year.includes(team.Year) && team.TeamType === 'STERLING'"><a
+                  [href]="team.Url">{{team.TeamName}}</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h3>Girls Teams</h3>
+        <ul class="list-group" *ngFor="let year of girlsSterlingYearList">
+          <li class="list-group-item flex-column align-items-star">
+            <div class="d-flex w-100 justify-content-between">
+              <h4 class="mb-1">{{year}}</h4>
+            </div>
+            <div *ngFor="let team of teamList">
+              <div *ngIf="team.Gender === 'Girls' && year.includes(team.Year) && team.TeamType === 'STERLING'"><a
+                  [href]="team.Url">{{team.TeamName}}</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-sm-12 banner-color" id="royal">
+      <h1 class="white-title">Royalty Teams</h1>
+      <a class="form-request-button" href="https://forms.gle/GPzzmcWZqBLJGvSt5" target="_blank">Apply For Royalty</a>
+      <button type="button" class="btn btn-secondary info-button" (click)="setModalInfo('Royalty Teams', 3)"
+        data-toggle="modal" data-target="#modal">Learn About Royalty Teams</button>
+    </div>
+    <div class="col-sm-6">
+      <h3>Boys Teams</h3>
+      <ul class="list-group" *ngFor="let year of royaltyBoysYearList">
+        <li class="list-group-item flex-column align-items-star">
+          <div class="d-flex w-100 justify-content-between">
+            <h4 class="mb-1">{{year}}</h4>
+          </div>
+          <div *ngFor="let team of teamList">
+            <div *ngIf="team.Gender === 'Boys' && year.includes(team.Year) && team.TeamType === 'ROYALTY'"><a
+                [href]="team.Url">{{team.TeamName}}</a></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Girls Teams</h3>
+      <ul class="list-group" *ngFor="let year of royaltyGirlsYearList">
+        <li class="list-group-item flex-column align-items-star">
+          <div class="d-flex w-100 justify-content-between">
+            <h4 class="mb-1">{{year}}</h4>
+          </div>
+          <div *ngFor="let team of teamList">
+            <div *ngIf="team.Gender === 'Girls' && year.includes(team.Year) && team.TeamType === 'ROYALTY'"><a
+                [href]="team.Url">{{team.TeamName}}</a></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h1 class="" id=tryoutInfo>Tryout Info</h1>
+  <button type="button" class="btn btn-primary tryout-button" data-toggle="modal" data-target="#tryoutAdModal">
+    Create Tryout Ad
+  </button>
+  <table class="col-lg-12 padding-bottom-large">
+    <tr>
+      <th class="col-lg-2">Level of Play</th>
+      <th class="col-lg-1">Team Age</th>
+      <th class="col-lg-1">Gender</th>
+      <th class="col-lg-1">Team Name</th>
+      <th class="col-lg-2">Times of Tryouts</th>
+      <th class="col-lg-2">Location</th>
+      <th class="col-lg-1">Team Website</th>
+      <th class="col-lg-2">Additional Info</th>
+    </tr>
+    <tr *ngFor="let response of tryoutFormResponses">
+      <td>{{response.WhatlevelofPlay}}</td>
+      <td>{{response.WhatistheteamAge}}</td>
+      <td>{{response.WhatistheGenderoftheteam}}</td>
+      <td>{{response.NameofTeam}}</td>
+      <td>{{response.DateandTimesofTryouts}}</td>
+      <td>{{response.LocationincludingAddressofTryouts}}</td>
+      <td>{{response.LinktoTeamWebsite}}</td>
+      <td>{{response.Additionalinformation}}</td>
+    </tr>
+  </table>
+
+
+  <!-- Modal -->
+  <div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{teamType}}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div *ngIf="sterlingDescriptionId === 1">
+            <p>As always, we take pride in our independent teams that participate in NUU.
+              The coaches of these teams create a great experience and facilitate opportunities at various levels of
+              play
+              and training.
+              We hope that the coaches and managers will help future teammates find the right fit for them by creating a
+              <a href="https://forms.gle/1DXmMVVRFd3L9FDYA">team site</a> to have posted here.</p>
+          </div>
+          <div *ngIf="sterlingDescriptionId === 2">
+            <p>Last year NUU established the <a href="https://sites.google.com/view/nuu-sterling-program/home">Sterling
+                Program</a> with the intent of having our Director of Coaching run training sessions
+              and mentor each teams coaching staff both on and off of the field.
+              The Sterling Program will continue with a <a
+                href="https://sites.google.com/view/nuu-sterling-program/staff">larger staff</a> and a more favorable <a
+                href="https://sites.google.com/view/nuu-sterling-program/training-packages-costs">cost per player</a>
+              arrangement.
+              It will also include a coach to coach mentoring program that will challenge the 2018-2019 Sterling Coaches
+              to mentor a
+              new 2019-2020 Sterling coaching staff.
+              The mentoring portion of the Sterling Program is optional for each coaching staff to take advantage of or
+              not.
+              <a href="https://sites.google.com/view/nuu-sterling-program/training-packages-costs">Click here to see the
+                training package options and costs for the Sterling Program</a>.</p>
+          </div>
+          <div *ngIf="sterlingDescriptionId === 3">
+            <p>In 2019-2020 we are introducing the NUU “Royalty Program.”
+              This program is for the most ambitious teams in Northern Utah United ages 10-16.
+              For a team to become a Royalty team they <a href="https://forms.gle/vjb2L9Mx9vADTLsK7">must apply by
+                filling
+                out an online survey by May 19th 2019</a>.
+              The Royalty teams will consist of like-minded coaches that will collaborate in training and reflection
+              while
+              assisting one anothers teams.
+              There will be a common system of play to create consistency and continuity among players and coaches.
+              Every royalty team gets to keep their own team name, identity and jersey.
+              They will be identified as royalty teams in training with training shirts and on game days with armbands
+              that reflect their “royalty” status in NUU.
+              This is not a program for everyone. This is a select program for the most ambitious of coaching staffs and
+              their teams.
+              The Royalty teams should be viewed as the ultimate team to strive to play for in the club if a player has
+              ambitions to play beyond High School,
+              as they will attend more tournaments, train more frequently and work to earn starting spots and playing
+              time
+              among other ambitious players while being
+              guided by sincere coaches that are dedicated and care for the individuals on the team as much as he/she
+              cares for the team to be successful in player development and competition.
+              Royalty teams will remain in their current Jerseys and represent their independence or affiliation with
+              other teams that share the same name.
+              <a href="https://forms.gle/vjb2L9Mx9vADTLsK7">Click here to apply to be a Royalty Team</a>.
+              If you are interested in learning more about the Royalty Program please email Coach Ginn (<a
+                href="mailto:NUUginn@gmail.com">NUUginn@gmail.com</a>).</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--tryout ad form modal-->
+  <div class="modal" id="tryoutAdModal" tabindex="-1" role="dialog" aria-labelledby="tryoutAdModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tryoutAdModal">Tryout Ad Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe-6XuJotHWtGnuHNvChw_yaOrHTvnSCUTF21FdG4pRyIrz9A/viewform?embedded=true"
+            width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

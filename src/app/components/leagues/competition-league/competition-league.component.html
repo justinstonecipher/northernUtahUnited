@@ -24,17 +24,17 @@
     <th class="col-lg-1">Team Name</th>
     <th class="col-lg-2">Times of Tryouts</th>
     <th class="col-lg-2">Location</th>
-    <th class="col-lg-1">Contact</th>
+    <th class="col-lg-1">Team Website</th>
     <th class="col-lg-2">Additional Info</th>
   </tr>
   <tr *ngFor="let response of googleFormResponses">
-    <td>{{response.WhatlevelofPlay}}</td>
-    <td>{{response.WhatistheteamAge}}</td>
-    <td>{{response.WhatistheGenderoftheteam}}</td>
-    <td>{{response.TeamName}}</td>
-    <td>{{response.DateandTimesofTryouts}}</td>
-    <td>{{response.LocationincludingAddressofTryouts}}</td>
-    <td>{{response.CoachorContactandContactinformation}}</td>
-    <td>{{response.AdditionalInformation}}</td>
+      <td>{{response.WhatlevelofPlay}}</td>
+      <td>{{response.WhatistheteamAge}}</td>
+      <td>{{response.WhatistheGenderoftheteam}}</td>
+      <td>{{response.NameofTeam}}</td>
+      <td>{{response.DateandTimesofTryouts}}</td>
+      <td>{{response.LocationincludingAddressofTryouts}}</td>
+      <td>{{response.LinktoTeamWebsite}}</td>
+      <td>{{response.Additionalinformation}}</td>
   </tr>
 </table>

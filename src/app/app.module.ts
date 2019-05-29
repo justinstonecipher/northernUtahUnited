@@ -10,6 +10,7 @@ import { routes } from './app.router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { TryoutGuideComponent } from './components/tryout-guide/tryout-guide.component';
 
 enableProdMode();
 
@@ -18,6 +19,7 @@ enableProdMode();
     AppComponent,
     HomeComponent,
     NotFoundComponent,
+    TryoutGuideComponent,
   ],
   imports: [
     BrowserModule,
