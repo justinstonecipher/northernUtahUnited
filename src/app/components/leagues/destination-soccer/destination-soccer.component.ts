@@ -109,12 +109,12 @@ export class DestinationSoccerComponent implements OnInit {
       dates: 'June 5, 12, 19, 26',
       sessionTimes: '5:00 - 6:00 PM'
     },
-    {
-      monthId: 6,
-      overViewDates: 'Sundays June 2 - 30 (Spanish & English)',
-      dates: 'June 2, 8, 16, 23, 30',
-      sessionTimes: '5:00 - 6:00 PM'
-    },
+    // {
+    //   monthId: 6,
+    //   overViewDates: 'Sundays June 2 - 30 (Spanish & English)',
+    //   dates: 'June 2, 8, 16, 23, 30',
+    //   sessionTimes: '5:00 - 6:00 PM'
+    // },
   ];
 
   games: Games[] = [
@@ -155,7 +155,7 @@ export class DestinationSoccerComponent implements OnInit {
     // },
     {
       monthId: 6,
-      gameDays: 'June 1, 8, 15, 22, 29',
+      gameDays: 'June 8, 15, 22, 29',
       gameTime: 'Saturdays 9:00 - 10:00 AM'
     }
   ];
@@ -193,25 +193,25 @@ export class DestinationSoccerComponent implements OnInit {
     }
   ];
 
-  location: Locations = {
-    monthId: 4,
-    city: 'Nibley City April Session',
-    address: '2980 South 1200 west',
-    sessionsDates: [
-      {
-        monthId: 4,
-        overViewDates: 'Mondays April 15 - May 6',
-        dates: 'April 15, 22, 29, & May 6',
-        sessionTimes: '9:30 - 10:30 AM',
-      },
-      {
-        monthId: 4,
-        overViewDates: 'Tuesdays April 16 - May 7',
-        dates: 'April 16, 23, 30, & May 7',
-        sessionTimes: '9:30 - 10:30 AM',
-      }
-    ]
-  };
+  // location: Locations = {
+  //   monthId: 4,
+  //   city: 'Nibley City April Session',
+  //   address: '2980 South 1200 west',
+  //   sessionsDates: [
+  //     {
+  //       monthId: 4,
+  //       overViewDates: 'Mondays April 15 - May 6',
+  //       dates: 'April 15, 22, 29, & May 6',
+  //       sessionTimes: '9:30 - 10:30 AM',
+  //     },
+  //     {
+  //       monthId: 4,
+  //       overViewDates: 'Tuesdays April 16 - May 7',
+  //       dates: 'April 16, 23, 30, & May 7',
+  //       sessionTimes: '9:30 - 10:30 AM',
+  //     }
+  //   ]
+  // };
 
   constructor() { }
   ngOnInit() {

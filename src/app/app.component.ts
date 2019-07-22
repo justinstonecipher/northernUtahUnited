@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import 'rxjs/add/operator/distinctUntilChanged';
+import * as $ from 'jquery';
 
 declare let gtag: Function;
 
@@ -31,3 +32,5 @@ export class AppComponent implements OnInit {
   });
   }
 }
+
+
