@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 import {enableProdMode} from '@angular/core';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { HttpClientModule } from '@angular/common/http'
 
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { routes } from './app.router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -24,7 +24,7 @@ enableProdMode();
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     routes,
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],

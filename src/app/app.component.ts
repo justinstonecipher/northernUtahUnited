@@ -1,6 +1,8 @@
+
+import {distinctUntilChanged} from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import 'rxjs/add/operator/distinctUntilChanged';
+
 
 declare let gtag: Function;
 
@@ -20,13 +22,13 @@ export class AppComponent implements OnInit {
       window.scrollTo(0, 0);
     });
 
-    this.router.events.distinctUntilChanged((previous: any, current: any) => {
+    this.router.events.pipe(distinctUntilChanged((previous: any, current: any) => {
       // Subscribe to any `NavigationEnd` events where the url has changed
       if(current instanceof NavigationEnd) {
           return previous.url === current.url;
       }
       return true;
-  }).subscribe((x: any) => {
+  })).subscribe((x: any) => {
     gtag('config', 'UA-139916517-1', {'page_path': x.url});
   });
   }
