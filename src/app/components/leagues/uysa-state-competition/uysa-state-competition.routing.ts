@@ -7,6 +7,7 @@ import { UysaRegistrationInfoComponent } from '../uysa-state-competition/uysa-re
 import { UysaLeagueResultsComponent } from '../uysa-state-competition/uysa-league-results/uysa-league-results.component';
 import { UysaTryoutInfoComponent } from '../uysa-state-competition/uysa-tryout-info/uysa-tryout-info.component';
 import { UysaTryoutAdFormComponent } from '../uysa-state-competition/uysa-tryout-ad-form/uysa-tryout-ad-form.component';
+import { UysaStateCompetitionModule } from './uysa-state-competition.module';
 
 const routes: Routes = [
   { path: '', 
@@ -36,4 +37,4 @@ const routes: Routes = [
  }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forChild(routes);
+export const routing: ModuleWithProviders<UysaStateCompetitionModule> = RouterModule.forChild(routes);

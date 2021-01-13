@@ -1,7 +1,7 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AppModule } from './app.module';
 
-import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component'
 import { TryoutGuideComponent } from './components/tryout-guide/tryout-guide.component';
@@ -78,4 +78,4 @@ export const router: Routes = [
   }
 ];
 
-export const routes: ModuleWithProviders = RouterModule.forRoot(router, { relativeLinkResolution: 'legacy' });
+export const routes: ModuleWithProviders<AppModule> = RouterModule.forRoot(router, { relativeLinkResolution: 'legacy' });

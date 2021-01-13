@@ -8,6 +8,7 @@ import { CupLocationComponent } from '../cache-valley-cup/cup-location/cup-locat
 import { CupCarnivalComponent } from '../cache-valley-cup/cup-carnival/cup-carnival.component';
 import { CupRulesComponent } from '../cache-valley-cup/cup-rules/cup-rules.component';
 import { CupDirectionsComponent } from '../cache-valley-cup/cup-directions/cup-directions.component';
+import { CacheValleyCupModule } from './cache-valley-cup.module';
 
 const routes: Routes = [
     {
@@ -42,4 +43,4 @@ const routes: Routes = [
     }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forChild(routes);
+export const routing: ModuleWithProviders<CacheValleyCupModule> = RouterModule.forChild(routes);

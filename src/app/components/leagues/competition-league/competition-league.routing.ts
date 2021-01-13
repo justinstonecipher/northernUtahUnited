@@ -7,6 +7,7 @@ import { RegistrationInfoComponent } from '../competition-league/registration-in
 import { LeagueResultsComponent } from '../competition-league/league-results/league-results.component';
 import { TryoutInfoComponent } from '../competition-league/tryout-info/tryout-info.component';
 import { TryoutAdFormComponent } from '../competition-league/tryout-ad-form/tryout-ad-form.component';
+import { CompetitionLeagueModule } from './competition-league.module';
 
 const routes: Routes = [
     {
@@ -37,4 +38,4 @@ const routes: Routes = [
     }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forChild(routes);
+export const routing: ModuleWithProviders<CompetitionLeagueModule> = RouterModule.forChild(routes);

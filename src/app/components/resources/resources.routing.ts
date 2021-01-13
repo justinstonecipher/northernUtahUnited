@@ -17,6 +17,7 @@ import { RslLoganFacilityComponent } from '../resources/rsl-logan-facility/rsl-l
 import { TeachPrinciplesComponent } from '../resources/teach-principles/teach-principles.component';
 import { TotalFootballComponent } from '../resources/total-football/total-football.component';
 import { UysaChangesComponent } from '../resources/uysa-changes/uysa-changes.component';
+import { ResourcesModule } from './resources.module';
 
 const routes: Routes = [
     {
@@ -87,4 +88,4 @@ const routes: Routes = [
     }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forChild(routes);
+export const routing: ModuleWithProviders<ResourcesModule> = RouterModule.forChild(routes);
