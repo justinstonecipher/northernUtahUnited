@@ -19,7 +19,8 @@
       href="https://drive.google.com/open?id=1Aet7L6369GX_ZbDnvqncBrr5c9GYUi1FvY2BhycNps4" target="_blank">Request
       Site</a>
     <div class="col-sm-12">
-      <button type="button" (click)="scrollToTryoutInfo()" class="btn btn-warning tryout">Individual Team Tryout Info</button>
+      <button type="button" (click)="scrollToTryoutInfo()" class="btn btn-warning tryout">Individual Team Tryout
+        Info</button>
     </div>
     <div class="col-sm-12 center center-pad">
       <div>Programs are Identified in colors to represent the level of ambition a player and their family should have to
@@ -46,7 +47,8 @@
     </div>
     <div class="col-sm-12 center">
       <div>Note: If you do not find a team that suits you during the tryout process we will have a "catch all" tryout
-        Friday, May 31 & Saturday, June 1. <a target="_blank" href="https://sites.google.com/view/nuucatchalltryoutinformation/home">Click here for details.</a> </div>
+        Friday, May 31 & Saturday, June 1. <a target="_blank"
+          href="https://sites.google.com/view/nuucatchalltryoutinformation/home">Click here for details.</a> </div>
     </div>
   </div>
   <div class="row nuu-leagues">
@@ -278,101 +280,109 @@
       </ul>
     </div>
   </div>
+  <div class="col-sm-12">
+    <h1 class="" id=tryoutInfo>Tryout Info</h1>
+    <button type="button" class="btn btn-primary tryout-button" data-toggle="modal" data-target="#tryoutAdModal">
+      Create Tryout Ad
+    </button>
+    <table class="col-lg-12 padding-bottom-large">
+      <tr>
+        <th class="col-lg-2">Level of Play</th>
+        <th class="col-lg-1">Team Age</th>
+        <th class="col-lg-1">Gender</th>
+        <th class="col-lg-1">Team Name</th>
+        <th class="col-lg-2">Times of Tryouts</th>
+        <th class="col-lg-2">Location</th>
+        <th class="col-lg-1">Team Website</th>
+        <th class="col-lg-2">Additional Info</th>
+      </tr>
+      <tr *ngFor="let response of tryoutFormResponses">
+        <td>{{response.WhatlevelofPlay}}</td>
+        <td>{{response.WhatistheteamAge}}</td>
+        <td>{{response.WhatistheGenderoftheteam}}</td>
+        <td>{{response.NameofTeam}}</td>
+        <td>{{response.DateandTimesofTryouts}}</td>
+        <td>{{response.LocationincludingAddressofTryouts}}</td>
+        <td>{{response.LinktoTeamWebsite}}</td>
+        <td>{{response.Additionalinformation}}</td>
+      </tr>
+    </table>
 
-  <h1 class="" id=tryoutInfo>Tryout Info</h1>
-  <button type="button" class="btn btn-primary tryout-button" data-toggle="modal" data-target="#tryoutAdModal">
-    Create Tryout Ad
-  </button>
-  <table class="col-lg-12 padding-bottom-large">
-    <tr>
-      <th class="col-lg-2">Level of Play</th>
-      <th class="col-lg-1">Team Age</th>
-      <th class="col-lg-1">Gender</th>
-      <th class="col-lg-1">Team Name</th>
-      <th class="col-lg-2">Times of Tryouts</th>
-      <th class="col-lg-2">Location</th>
-      <th class="col-lg-1">Team Website</th>
-      <th class="col-lg-2">Additional Info</th>
-    </tr>
-    <tr *ngFor="let response of tryoutFormResponses">
-      <td>{{response.WhatlevelofPlay}}</td>
-      <td>{{response.WhatistheteamAge}}</td>
-      <td>{{response.WhatistheGenderoftheteam}}</td>
-      <td>{{response.NameofTeam}}</td>
-      <td>{{response.DateandTimesofTryouts}}</td>
-      <td>{{response.LocationincludingAddressofTryouts}}</td>
-      <td>{{response.LinktoTeamWebsite}}</td>
-      <td>{{response.Additionalinformation}}</td>
-    </tr>
-  </table>
 
-
-  <!-- Modal -->
-  <div class="modal" id="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">{{teamType}}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div *ngIf="sterlingDescriptionId === 1">
-            <p>As always, we take pride in our independent teams that participate in NUU.
-              The coaches of these teams create a great experience and facilitate opportunities at various levels of
-              play
-              and training.
-              We hope that the coaches and managers will help future teammates find the right fit for them by creating a
-              <a href="https://forms.gle/1DXmMVVRFd3L9FDYA">team site</a> to have posted here.</p>
+    <!-- Modal -->
+    <div class="modal" id="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{teamType}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div *ngIf="sterlingDescriptionId === 2">
-            <p>Last year NUU established the <a href="https://sites.google.com/view/nuu-sterling-program/home">Sterling
-                Program</a> with the intent of having our Director of Coaching run training sessions
-              and mentor each teams coaching staff both on and off of the field.
-              The Sterling Program will continue with a <a
-                href="https://sites.google.com/view/nuu-sterling-program/staff">larger staff</a> and a more favorable <a
-                href="https://sites.google.com/view/nuu-sterling-program/training-packages-costs">cost per player</a>
-              arrangement.
-              It will also include a coach to coach mentoring program that will challenge the 2018-2019 Sterling Coaches
-              to mentor a
-              new 2019-2020 Sterling coaching staff.
-              The mentoring portion of the Sterling Program is optional for each coaching staff to take advantage of or
-              not.
-              <a href="https://sites.google.com/view/nuu-sterling-program/training-packages-costs">Click here to see the
-                training package options and costs for the Sterling Program</a>.</p>
+          <div class="modal-body">
+            <div *ngIf="sterlingDescriptionId === 1">
+              <p>As always, we take pride in our independent teams that participate in NUU.
+                The coaches of these teams create a great experience and facilitate opportunities at various levels of
+                play
+                and training.
+                We hope that the coaches and managers will help future teammates find the right fit for them by creating
+                a
+                <a href="https://forms.gle/1DXmMVVRFd3L9FDYA">team site</a> to have posted here.</p>
+            </div>
+            <div *ngIf="sterlingDescriptionId === 2">
+              <p>Last year NUU established the <a
+                  href="https://sites.google.com/view/nuu-sterling-program/home">Sterling
+                  Program</a> with the intent of having our Director of Coaching run training sessions
+                and mentor each teams coaching staff both on and off of the field.
+                The Sterling Program will continue with a <a
+                  href="https://sites.google.com/view/nuu-sterling-program/staff">larger staff</a> and a more favorable
+                <a href="https://sites.google.com/view/nuu-sterling-program/training-packages-costs">cost per player</a>
+                arrangement.
+                It will also include a coach to coach mentoring program that will challenge the 2018-2019 Sterling
+                Coaches
+                to mentor a
+                new 2019-2020 Sterling coaching staff.
+                The mentoring portion of the Sterling Program is optional for each coaching staff to take advantage of
+                or
+                not.
+                <a href="https://sites.google.com/view/nuu-sterling-program/training-packages-costs">Click here to see
+                  the
+                  training package options and costs for the Sterling Program</a>.</p>
+            </div>
+            <div *ngIf="sterlingDescriptionId === 3">
+              <p>In 2019-2020 we are introducing the NUU “Royalty Program.”
+                This program is for the most ambitious teams in Northern Utah United ages 10-16.
+                For a team to become a Royalty team they <a href="https://forms.gle/vjb2L9Mx9vADTLsK7">must apply by
+                  filling
+                  out an online survey by May 19th 2019</a>.
+                The Royalty teams will consist of like-minded coaches that will collaborate in training and reflection
+                while
+                assisting one anothers teams.
+                There will be a common system of play to create consistency and continuity among players and coaches.
+                Every royalty team gets to keep their own team name, identity and jersey.
+                They will be identified as royalty teams in training with training shirts and on game days with armbands
+                that reflect their “royalty” status in NUU.
+                This is not a program for everyone. This is a select program for the most ambitious of coaching staffs
+                and
+                their teams.
+                The Royalty teams should be viewed as the ultimate team to strive to play for in the club if a player
+                has
+                ambitions to play beyond High School,
+                as they will attend more tournaments, train more frequently and work to earn starting spots and playing
+                time
+                among other ambitious players while being
+                guided by sincere coaches that are dedicated and care for the individuals on the team as much as he/she
+                cares for the team to be successful in player development and competition.
+                Royalty teams will remain in their current Jerseys and represent their independence or affiliation with
+                other teams that share the same name.
+                <a href="https://forms.gle/vjb2L9Mx9vADTLsK7">Click here to apply to be a Royalty Team</a>.
+                If you are interested in learning more about the Royalty Program please email Coach Ginn (<a
+                  href="mailto:NUUginn@gmail.com">NUUginn@gmail.com</a>).</p>
+            </div>
           </div>
-          <div *ngIf="sterlingDescriptionId === 3">
-            <p>In 2019-2020 we are introducing the NUU “Royalty Program.”
-              This program is for the most ambitious teams in Northern Utah United ages 10-16.
-              For a team to become a Royalty team they <a href="https://forms.gle/vjb2L9Mx9vADTLsK7">must apply by
-                filling
-                out an online survey by May 19th 2019</a>.
-              The Royalty teams will consist of like-minded coaches that will collaborate in training and reflection
-              while
-              assisting one anothers teams.
-              There will be a common system of play to create consistency and continuity among players and coaches.
-              Every royalty team gets to keep their own team name, identity and jersey.
-              They will be identified as royalty teams in training with training shirts and on game days with armbands
-              that reflect their “royalty” status in NUU.
-              This is not a program for everyone. This is a select program for the most ambitious of coaching staffs and
-              their teams.
-              The Royalty teams should be viewed as the ultimate team to strive to play for in the club if a player has
-              ambitions to play beyond High School,
-              as they will attend more tournaments, train more frequently and work to earn starting spots and playing
-              time
-              among other ambitious players while being
-              guided by sincere coaches that are dedicated and care for the individuals on the team as much as he/she
-              cares for the team to be successful in player development and competition.
-              Royalty teams will remain in their current Jerseys and represent their independence or affiliation with
-              other teams that share the same name.
-              <a href="https://forms.gle/vjb2L9Mx9vADTLsK7">Click here to apply to be a Royalty Team</a>.
-              If you are interested in learning more about the Royalty Program please email Coach Ginn (<a
-                href="mailto:NUUginn@gmail.com">NUUginn@gmail.com</a>).</p>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

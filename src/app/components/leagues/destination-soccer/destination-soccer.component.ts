@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { s } from '@angular/core/src/render3';
+import { Component, OnInit, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-destination-soccer',
@@ -213,8 +213,9 @@ export class DestinationSoccerComponent implements OnInit {
   //   ]
   // };
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private document: Document) { }
   ngOnInit() {
+    this.document.location.href = 'https://sites.google.com/view/nuu-destination-soccer/home';
   }
 }
 export interface Month {

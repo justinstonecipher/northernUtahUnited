@@ -10,24 +10,25 @@
       </ol>
     </div>
   </div>
-  
+
   <div class="col-lg-12">
     <app-competition-side-bar></app-competition-side-bar>
   </div>
 </div>
+<div class="col-lg-12">
   <h1 class="">Tryout Info</h1>
-<table class="col-lg-12 padding-bottom-large">
-  <tr>
-    <th class="col-lg-2">Level of Play</th>
-    <th class="col-lg-1">Team Age</th>
-    <th class="col-lg-1">Gender</th>
-    <th class="col-lg-1">Team Name</th>
-    <th class="col-lg-2">Times of Tryouts</th>
-    <th class="col-lg-2">Location</th>
-    <th class="col-lg-1">Team Website</th>
-    <th class="col-lg-2">Additional Info</th>
-  </tr>
-  <tr *ngFor="let response of googleFormResponses">
+  <table class="padding-bottom-large">
+    <tr>
+      <th class="col-lg-2">Level of Play</th>
+      <th class="col-lg-1">Team Age</th>
+      <th class="col-lg-1">Gender</th>
+      <th class="col-lg-1">Team Name</th>
+      <th class="col-lg-2">Times of Tryouts</th>
+      <th class="col-lg-2">Location</th>
+      <th class="col-lg-1">Team Website</th>
+      <th class="col-lg-2">Additional Info</th>
+    </tr>
+    <tr *ngFor="let response of googleFormResponses">
       <td>{{response.WhatlevelofPlay}}</td>
       <td>{{response.WhatistheteamAge}}</td>
       <td>{{response.WhatistheGenderoftheteam}}</td>
@@ -36,5 +37,6 @@
       <td>{{response.LocationincludingAddressofTryouts}}</td>
       <td>{{response.LinktoTeamWebsite}}</td>
       <td>{{response.Additionalinformation}}</td>
-  </tr>
-</table>
+    </tr>
+  </table>
+</div>

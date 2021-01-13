@@ -41,7 +41,7 @@ export const router: Routes = [
     loadChildren:'./components/leagues/academy-soccer/academy-soccer.module#AcademySoccerModule',
   },
   {
-    path: 'destinationSoccer',
+    path: 'destination',
     loadChildren:'./components/leagues/destination-soccer/destination-soccer.module#DestinationSoccerModule',
   },
   {
