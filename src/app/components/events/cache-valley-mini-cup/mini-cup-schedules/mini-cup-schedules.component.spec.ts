@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { MiniCupSchedulesComponent } from './mini-cup-schedules.component';
 
@@ -6,7 +6,7 @@ describe('MiniCupSchedulesComponent', () => {
   let component: MiniCupSchedulesComponent;
   let fixture: ComponentFixture<MiniCupSchedulesComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ MiniCupSchedulesComponent ]
     })
