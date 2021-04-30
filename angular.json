@@ -21,6 +21,7 @@
               "src/images"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.less",
               "src/bootstrap.min.css"
@@ -36,7 +37,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -79,6 +79,7 @@
               "node_modules/bootstrap/dist/js/bootstrap.js"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.less",
               "src/bootstrap.min.css"

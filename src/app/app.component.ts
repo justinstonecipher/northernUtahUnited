@@ -2,6 +2,9 @@
 import {distinctUntilChanged} from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
+import {MatDialog} from '@angular/material/dialog';
+import { TryoutDialogComponent } from './components/tryout-dialog/tryout-dialog.component';
 
 
 declare let gtag: Function;
@@ -12,9 +15,19 @@ declare let gtag: Function;
   styleUrls: ['./app.component.less']
 })
 export class AppComponent implements OnInit {
-  constructor(public router: Router) { }
+  // cookiesSetOnSite = 'NUUAllowCookies';
+  // userAllowsCookies: boolean = false;
+  showTryoutDialog = 'ShowTryoutDialog';
+  showTryoutDialogBool: boolean = true;
+
+  constructor(public router: Router, private cookieService: CookieService, public dialog: MatDialog) { }
 
   ngOnInit() {
+    this.findCookieValue();
+    if(this.showTryoutDialogBool) {
+      this.openTryoutDialog();
+    }
+
     this.router.events.subscribe(evt => {
       if (!(evt instanceof NavigationEnd)) {
         return;
@@ -31,6 +44,17 @@ export class AppComponent implements OnInit {
   })).subscribe((x: any) => {
     gtag('config', 'UA-139916517-1', {'page_path': x.url});
   });
+  }
+
+  findCookieValue(): void {
+    const showDialogForUser = this.cookieService.get(this.showTryoutDialog);
+    if(showDialogForUser !== null && showDialogForUser !== undefined && showDialogForUser !== ""){
+      this.showTryoutDialogBool = JSON.parse(showDialogForUser);
+    }
+  }
+
+  openTryoutDialog() {
+    this.dialog.open(TryoutDialogComponent);
   }
 }
 

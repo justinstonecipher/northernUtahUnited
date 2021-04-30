@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recreation.component.less']
 })
 export class RecreationComponent implements OnInit {
-  currentYear = "Spring 2018";
+  currentYear = "Spring 2021";
   constructor() { }
 
   ngOnInit() {

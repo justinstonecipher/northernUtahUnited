@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./schedules.component.less']
 })
 export class SchedulesComponent implements OnInit {
-  currentYear = 'Fall 2020';
+  currentYear = 'Spring 2021';
+  fallTwenty = 'Fall 2020';
   springTwenty = 'Spring 2020';
   fallNineteen = 'Fall 2019';
   springNineteen = "Spring 2019";

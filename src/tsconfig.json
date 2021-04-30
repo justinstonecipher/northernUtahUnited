@@ -14,5 +14,10 @@
     "typeRoots": [
       "../node_modules/@types"
     ]
-  }
+  },
+  "exclude": [
+    "../src/test.ts",
+    "**/*.spec.ts",
+    "../src/environments/environment.prod.ts"
+  ]
 }

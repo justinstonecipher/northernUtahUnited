@@ -45,6 +45,10 @@ export const router: Routes = [
     loadChildren:'./components/leagues/destination-soccer/destination-soccer.module#DestinationSoccerModule',
   },
   {
+    path: 'boysHighSchool',
+    loadChildren: './components/leagues/high-school-challenger/high-school-challenger.module#HighSchoolChallengerModule',
+  },
+  {
     path: 'highSchoolPrep',
     loadChildren:'./components/leagues/high-school-prep/high-school-prep.module#HighSchoolPrepModule',
   },
