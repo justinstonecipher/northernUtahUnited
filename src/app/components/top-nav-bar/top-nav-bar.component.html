@@ -1,0 +1,36 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span class="toolbar-option">
+      <a routerLink="/home" class="home" value="home" routerLinkActive="active">NUU</a>
+    </span>
+    <span class="toolbar-option">
+      <a routerLink="/about" class="navigation-link" value="about" routerLinkActive="active">About</a>
+    </span>
+    <span class="toolbar-option">
+      <a routerLink="/resources/downloads" value="resources" class="navigation-link" routerLinkActive="active">Resources</a>
+    </span>
+    <span class="toolbar-option">
+      <a routerLink="/events/upcomingEvents" value="events" class="navigation-link" routerLinkActive="active">Events</a>
+    </span>
+    <span class="toolbar-option">
+      <button mat-button class="dropdown-link" [matMenuTriggerFor]="menu">Leagues &amp; Programs <mat-icon>expand_more
+        </mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <a routerLink="/competitionLeague/challengerSchedule"  routerLinkActive="active" class="mat-link" mat-menu-item>Challenger League</a>
+        <a routerLink="/uysaStateCompetition/uysaSchedule"  routerLinkActive="active" class="mat-link" mat-menu-item>UYSA State Competition</a>
+        <a routerLink="/boysHighSchool" class="mat-link"  routerLinkActive="active" mat-menu-item>Boys High School Challenger League</a>
+        <mat-divider></mat-divider>
+        <a href="https://cvtryouts.com/destination" class="mat-link" target="_blank" mat-menu-item>Destination Soccer Programs</a>
+        <a href="https://forms.gle/spNDKutezs8W1YLY7" class="mat-link" target="_blank" mat-menu-item>Pickup Soccer</a>
+        <a href="https://cvtryouts.com/rise" class="mat-link" target="_blank" mat-menu-item>All Programs</a>
+      </mat-menu>
+    </span>
+    <span class="toolbar-option">
+      <a routerLink="/recreation" class="navigation-link" routerLinkActive="active">Recreation</a>
+    </span>
+    <span class="spacer"></span>
+    <span class="toolbar-option">
+      <a href="http://uysa.affinitysoccer.com/reg/index.asp?sessionguid=" class="navigation-link" target="_blank">Affinity Soccer</a>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>
