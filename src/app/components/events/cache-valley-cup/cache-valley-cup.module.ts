@@ -8,9 +8,10 @@ import { CupCarnivalComponent } from '../cache-valley-cup/cup-carnival/cup-carni
 import { CupRulesComponent } from '../cache-valley-cup/cup-rules/cup-rules.component';
 import { CupDirectionsComponent } from '../cache-valley-cup/cup-directions/cup-directions.component';
 import { routing } from './cache-valley-cup.routing';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-    imports: [routing],
+    imports: [routing, CommonModule],
     declarations: [
         CacheValleyCupComponent,
         CupRegistrationComponent,

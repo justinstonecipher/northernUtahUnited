@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>2021 Cache Valley Cup</h1>
+<!-- <div class="image-container">
+    <img src="/images/Trytous_Image.jpeg" class="popup-image" alt="NUU Tryout's Info" />
+  </div> -->
+  <div mat-dialog-content>
+      <div>
+        Go to <a class="cvc-link" (click)="navigateAndClose()">the Cache Valley Cup page</a> for all 2021 Cache Valley Cup information!
+      </div>
+      <!-- <div>
+          <a target="_blank" href="http://uysa-cvc21.sportsaffinity.com">Register Here (uysa link)</a>.
+      </div> -->
+    </div>
+  <div mat-dialog-actions class="actions">
+    <!-- <a target="_blank" mat-button color="primary" class="button-link hidden-sm hidden-xs" routerLink="https://cvtryouts.com">CVC Info</a>  -->
+    <!-- <a target="_blank" mat-button color="primary" class="button-link hidden-md hidden-lg hidden-xl" href="https://cvtryouts.com">CV Tryouts</a>  -->
+    <button mat-button color="primary" mat-dialog-close>Close</button>
+    <button mat-button color="warn" (click)="setDontShowDialog()">Don't Show Again</button>
+  </div>

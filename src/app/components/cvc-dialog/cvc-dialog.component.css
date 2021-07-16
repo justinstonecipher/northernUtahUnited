@@ -4,15 +4,11 @@
     justify-content: space-between;
 }
 
-.popup-image {
-    height: 350px;
+.cvc-link {
+    cursor: pointer;
 }
 
-.button-link {
-    text-decoration: none;
-}
-
-@media (max-width: 740px) {
+/* @media (max-width: 740px) {
     .image-container {
         display: flex;
         justify-content: center;
@@ -20,4 +16,4 @@
     .popup-image {
         height: 200px;
     }
-}
+} */

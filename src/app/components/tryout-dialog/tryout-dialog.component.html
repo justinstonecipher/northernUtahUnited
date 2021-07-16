@@ -1,6 +1,11 @@
-<h1 mat-dialog-title>Cache Valley Tryouts</h1>
-<div mat-dialog-content>Go to <a target="_blank" href="https://cvtryouts.com">cvtryouts.com</a> for all Cache Valley tryout information!</div>
+<!-- <h1 mat-dialog-title>Cache Valley Tryouts</h1> -->
+<div class="image-container">
+  <img src="/images/Trytous_Image.jpeg" class="popup-image" alt="NUU Tryout's Info" />
+</div>
+<!-- <div mat-dialog-content>Go to <a target="_blank" href="https://cvtryouts.com">cvtryouts.com</a> for all Cache Valley tryout information!</div> -->
 <div mat-dialog-actions class="actions">
+  <a target="_blank" mat-button color="primary" class="button-link hidden-sm hidden-xs" href="https://cvtryouts.com">Info At CV Tryouts</a> 
+  <a target="_blank" mat-button color="primary" class="button-link hidden-md hidden-lg hidden-xl" href="https://cvtryouts.com">CV Tryouts</a> 
   <button mat-button color="primary" mat-dialog-close>Close</button>
-  <button mat-button color="warn" (click)="setDontShowDialog()">Don't Show Again</button>
+  <button mat-button color="warn" (click)="setDontShowDialog()">Don't Show</button>
 </div>

@@ -17,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { TryoutDialogComponent } from './components/tryout-dialog/tryout-dialog.component';
+import { CvcDialogComponent } from './components/cvc-dialog/cvc-dialog.component';
 
 enableProdMode();
 
@@ -27,6 +28,7 @@ enableProdMode();
     NotFoundComponent,
     TryoutGuideComponent,
     TryoutDialogComponent,
+    CvcDialogComponent,
   ],
   imports: [
     BrowserModule,
