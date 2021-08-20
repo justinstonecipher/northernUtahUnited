@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./uysa-schedule.component.less']
 })
 export class UysaScheduleComponent implements OnInit {
-  currentYear = "Fall 2019";
+  currentYear = "Fall 2021";
+  fallNineteen = "Fall 2019";
   springNineteen = 'Spring 2019';
   springSeventeen = "Spring 2017";
   twentySixteen = "Fall 2016";
